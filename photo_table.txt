@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <header class = "page-header">
+            <div class = "page-header__logo">
+                <img class = "page-header__right-picture" src = "#" alt = "Очки">
+                <img class = "page-header__left-picture" src = "#" alt = "Крест">
+                <nav class = "page-header__nav-item">
+                    <ul class = "page-header__list">
+                        <a href = "#"><b>Главная</b></a>
+                    </ul>
+                    <ul class = "page-header__list">
+                        <a href = "#"><b>Фотографии</b></a>
+                    </ul>
+                    <ul class = "page-header__list">
+                        <a href = "#"><b>Конкурс</b></a>
+                    </ul>
+                    <ul class = "page-header__list">
+                        <a href = "#"><b>HTML ACADEMY</b></a>
+                    </ul>
+                </nav>
+                <img class = "header-image" src = "#" alt = "Фотография пользователя">
+            </div>
+        </header>
+        <main class = "main-page">
+            <div class = "main-page__intro">
+                <h1>Взгляните на фотографии, которые выкладывают<br> пользователи! Видите, как не хватает ваших ? </h1>
+            <div class = "main-page_photo">
+            <button class = "main-page__right">
+            Панорамма дня
+            </button>
+            </div>
+            <blockquote class = "main-page__anna">
+                <city><b>Анна</b> 
+                    <font color ="grey">(5 МИНУТ НАЗАД)</font>
+                    <font color = "pink"> НРАВИТСЯ:215</font> 
+                    <img class = "like" src = "#" alt = "сердце"</city>
+                    <p>Прыгать или нет ? Напишите в комментарии свой совет и смотрите прямую<br>трансляцию  в перископе, задавайте свои вопросы!</p>
+            </blockquote>
+            <blockquote class = "main-page__person">
+                <table class = "main-page__table">
+                    <tr>
+                    <td>
+                    <img src = "#" alt = "automobile">
+                    <city><b>Левон</b>
+                    <font color = "grey">(5 ЧАСОВ НАЗАД!)</font></city>
+                    <p>Вчера он на луну летал, сегодня в <br> одну руки к нам попало.</p>
+                    <font color = "pink">НРАВИТСЯ:356</font>
+                    <img class = "like" src = "#" alt = "like">
+                    </td>
+                    <td>
+<img src = "#" alt = "music">
+<city><b>Антон</b>(12 ЧАСОВ НАЗАД)</city>
+<p>Соседи будут рады!</p>
+<p><font color = "pink">НРАВИТСЯ:666</font><img class = "like" src = "#" alt = "like"></p>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <img src = "#" alt = "glass">
+                                <city><b>Борис</b>(20 ЧАСОВ НАЗАД)</city>
+                                <p>Здесь могла быть ваша цитата о <br>высоком и вечном.</p>
+                                <p><font color = "pink">НРАВИТСЯ:215</font><img class = "like" src = "#" alt = "like"></p>
+                        </td>
+                        <td>
+                                <img src = "#" alt = "Kuba">
+                                <city><b>Сергей</b>(25 ЧАСОВ НАЗАД)</city>
+                                <p>Самая кубанская в мире!</p>
+                                <p><font color = "pink">НРАВИТСЯ:4</font><img class = "like" src = "#" alt = "like"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>
+                            <img src = "#" alt = "mountain">
+                                <city><b>Максим</b>(40 ЧАСОВ НАЗАД)</city>
+                                <p>Где снег-то</p>
+                                <p><font color = "pink">НРАВИТСЯ:150</font><img class = "like" src = "#" alt = "like"></p>
+                    </td>
+                    <td>
+                            <img src = "#" alt = "aitlane">
+                                <city><b>Надежда</b>(45 ЧАСОВ НАЗАД)</city>
+                                <p>Всем GM и взаимные лайки!</p>
+                                <p><font color = "pink">НРАВИТСЯ:2560</font><img class = "like" src = "#" alt = "like"></p>
+                    </td>
+                    </tr>
+                </table>
+                </blockquote>
+                <div class = "main-bot">
+                    <h1>Затмите всех!</h1>
+<h1>Выкладывайте все что накопилось в телефоне!</h1>
+                </div>
+            </div>
+           
+        <section>
+            <div class = "redactor">
+                <div class = "redactor__photo">
+                <img src ="#" alt ="winter">
+                </div>
+                <div class = "redactor__tools">
+                <img src = "#" alt = "tools">
+                <button class = "redactor__start">Запустить</button>
+                <button class = "redactor__cancel">Отмена</button>
+                </div>
+            </div>
+        </selection>
+
+        </main>
+        <footer class = "footer-page">
+            <img class = "footer-page__logo"src = "#" alt = "logo">
+            <img class = 'footer-page__icon' src = "#" alt = "icon">
+            <img class = 'footer-page__icon' src = "#" alt = "icon">
+            <img class = 'footer-page__icon' src = "#" alt = "icon">
+            <img class = "footer-page__creater" src = "#" alt = "creater html academy">
+        </footer>
+    </body>
+</html>
