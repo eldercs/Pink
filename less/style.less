@@ -4,7 +4,7 @@
 @colorindex:rgb(24, 27, 31);
 @import "blocks/page-header.less";
 html{
-    font-family: sans-serif; 
+    font-family: "sans-serif","Open Sans";
    
 }
 @media screen and(max-width: 320px){
@@ -15,6 +15,10 @@ html{
 }
 }
 @media screen and(min-width: 768px), (min-width:320px){
+    .main-page{
+        display:flex;
+        flex-direction: column-reverse;
+    }
     .authorization p,h2{
         text-align:center;
         padding-top:14px;
@@ -28,7 +32,7 @@ html{
         font-size:10pt;
     }
     input[type="text"]{
-        width:100%;
+        width:95%;
         border:1px solid silver;
         height:20px;
         padding-top:8px;
@@ -41,6 +45,7 @@ html{
        
     }
     .authorization {
+        order:2;
         .block1{
         display: flex;
     }
@@ -50,6 +55,15 @@ html{
     }
 }
 }
+    .progress{
+        order:1;
+    }
+    .telephone{
+        order:1;
+    }
+    .app{
+        order:1;
+    }
 }
 .authorization{
   
