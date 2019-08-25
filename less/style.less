@@ -19,6 +19,11 @@ html{
       display:none;
     }
 }
+.comment{
+    h2{
+        padding-top:35px;
+    }
+}
 }
 @media screen and(min-width: 768px), (min-width:320px){
     .main-page{
@@ -51,7 +56,7 @@ html{
        
     }
     .authorization {
-        order:2;
+        order:3;
         .block1{
         display: flex;
     }
@@ -62,11 +67,23 @@ html{
     }
     }
     .progress{
-        order:1;
+        order:2;
     }
     .telephone{
+        order:2;
+    }
+    .send{
         order:1;
     }
+    .comment{
+        order:1;
+    }
+    .bottom_menu{
+        order:0;
+    }
+  
+   
+    
     .app{
         border:2px solid rgb(194, 194, 194);
         order:1;
@@ -97,6 +114,71 @@ html{
             text-transform: uppercase;
         }
     }
+    .progress{
+        border:2px solid rgb(194, 194, 194);
+        margin-top:40px;
+        background-color:@colorback1;
+        h2{
+            text-align:center;
+            font-size:14px;
+            margin-top:-20px;
+            background-color:@colorback1;
+            max-width:450px;
+            margin-left:auto;
+            margin-right:auto;
+            color:@colorred;
+            text-transform: uppercase;
+        }
+       .form-1{
+             display:none;
+       }
+    }
+    .comment{
+        border:2px solid rgb(194, 194, 194);
+        margin-top:40px;
+        margin-bottom:25px;
+        h2{
+            text-align:center;
+            font-size:14px;
+            margin-top:-20px;
+            background-color:@colorback1;
+            max-width:280px;
+            margin-left:auto;
+            margin-right:auto;
+            color:@colorred;
+            text-transform: uppercase;
+        }
+      button{
+          display:none;
+      }
+       .warning{
+          display:none;
+       }
+    }
+    .bottom_menu{
+        padding-top:10px;
+        height:120px;
+        font-size:14px;
+        button{
+         background-color:green;
+         color:@colorback1;
+         font-size:18px;
+         height:40px;
+          width:300px;
+         position: absolute;
+          left:30px;
+          font-weight: 700;
+          text-transform: uppercase;
+          height:60px;
+        }
+        p1{
+
+            margin-top:26px;
+            position: absolute;
+            right:45px;
+        }
+    }
+    
 }
 .main-page{
     padding:0 40px;
@@ -147,7 +229,6 @@ html{
      background-color:@colorback1;
 }
 .comment h2{
-    padding-top:35px;
     margin:0;
     padding-bottom:10px;
     color:@colorred;
