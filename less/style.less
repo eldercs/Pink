@@ -1,16 +1,22 @@
 @colorback1:#FFFFFF;
 @colorback2: #F2F2F2;
-@colorred:red;
+@colorred:#d22856;
 @colorindex:rgb(24, 27, 31);
 @import "blocks/page-header.less";
 html{
     font-family: "sans-serif","Open Sans";
+    background-color:@colorback1;
    
 }
 @media screen and(max-width: 320px){
     .main-page__tittle{
         span{
         display:none;
+    }
+}
+    .telephone{
+      h3{
+      display:none;
     }
 }
 }
@@ -53,8 +59,8 @@ html{
         span{
         display:inline;
     }
-}
-}
+    }
+    }
     .progress{
         order:1;
     }
@@ -62,8 +68,38 @@ html{
         order:1;
     }
     .app{
+        border:2px solid rgb(194, 194, 194);
         order:1;
+        background-color:@colorback1;
+        h2{
+            font-size:14px;
+            margin-top:-24px;
+            background-color:white;
+            max-width:370px;
+            text-align:center;  
+            margin-left:auto;
+            margin-right:auto;
+            text-transform: uppercase;
+        }
     }
+    .telephone{
+        border:2px solid rgb(194, 194, 194);
+        margin-top:40px;
+        h3{
+            text-align:center;
+            font-size:14px;
+            margin-top:-8px;
+            background-color:@colorback1;
+            max-width:330px;
+            margin-left:auto;
+            margin-right:auto;
+            color:@colorred;
+            text-transform: uppercase;
+        }
+    }
+}
+.main-page{
+    padding:0 40px;
 }
 .authorization{
   
@@ -96,6 +132,7 @@ html{
 }
 .app{
     background-color:@colorback2;
+    margin-top:40px;
 }
 .app p{
     padding:5px;
@@ -104,6 +141,7 @@ html{
     margin:0;
     color:@colorred;
     padding-bottom:20px;
+    padding-right:10px;
 }
 .comment{ 
      background-color:@colorback1;
@@ -207,7 +245,7 @@ p{
 }
 body{
     display:block;
-    background:#008000;
+    background:@colorback1;
     width:320px;
     padding-top: 0;
     border-top: 0;
