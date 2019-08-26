@@ -180,8 +180,12 @@ html{
     }
     
 }
-@media(min-width:900px){
+@media(min-width:1000px){
     .menu{
+        text-align: center;
+        background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;;
+        height:300px;
+        
         img{
             display:none;
         }
@@ -191,18 +195,26 @@ html{
         display:flex;
         justify-content: space-between;
         text-transform: none;
+        background-color:rgba(29, 36, 46, 1 ,0.2);
+        
+      
         h1{
             padding-left:90px;
             padding-top:15px;
         }
+    }
+    .menu__item{
+        max-width:950px;  
+      
     }
     .menu__list{
         display:flex;
         justify-content: space-between;
         flex-wrap: wrap;
         li{
+            margin-left:30px;
             padding-top:25px;
-            padding-right:100px;
+            margin-right:70px;
             border-bottom:none;
         }
     }
