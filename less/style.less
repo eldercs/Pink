@@ -25,7 +25,7 @@ html{
     }
 }
 }
-@media screen and(min-width: 768px), (min-width:320px){
+@media screen and(min-width: 700px){
     .main-page{
         display:flex;
         flex-direction: column-reverse;
@@ -179,6 +179,34 @@ html{
         }
     }
     
+}
+@media(min-width:900px){
+    .menu{
+        img{
+            display:none;
+        }
+     
+    }
+    .menu__navigator{
+        display:flex;
+        justify-content: space-between;
+        text-transform: none;
+        h1{
+            padding-left:90px;
+            padding-top:15px;
+        }
+    }
+    .menu__list{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            padding-top:25px;
+            padding-right:100px;
+            border-bottom:none;
+        }
+    }
+   
 }
 .main-page{
     padding:0 40px;
