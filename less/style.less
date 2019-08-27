@@ -8,11 +8,14 @@ html{
     background-color:@colorback1;
    
 }
-@media screen and(max-width: 320px){
+@media screen and(max-width: 320px),(min-width:321px){
     .main-page__tittle{
         span{
         display:none;
     }
+}
+.lozung-desktop{
+    display:none;
 }
     .telephone{
       h3{
@@ -24,11 +27,17 @@ html{
         padding-top:35px;
     }
 }
+.main-page__title-desktop{
+    display:none;
+}
 }
 @media screen and(min-width: 700px){
     .main-page{
         display:flex;
         flex-direction: column-reverse;
+    }
+    .main-page__title-desktop{
+        display:none;
     }
     .authorization p,h2{
         text-align:center;
@@ -56,7 +65,7 @@ html{
        
     }
     .authorization {
-        order:3;
+        order:6;
         .block1{
         display: flex;
     }
@@ -67,19 +76,22 @@ html{
     }
     }
     .progress{
-        order:2;
+        order:4;
     }
     .telephone{
-        order:2;
+        order:5;
     }
     .send{
         order:1;
     }
     .comment{
-        order:1;
+        order:3;
     }
     .bottom_menu{
         order:0;
+    }
+    .news{
+        order:7;
     }
   
    
@@ -192,6 +204,9 @@ html{
         }
      
     }
+    .main-page{
+        display:flex;
+    }
     .lozung{
         display:none;
        
@@ -249,7 +264,40 @@ html{
             display:none;
             
         }
+        .block1{
+            width:400px;
+        }
+        .FIO{
+            text-align:left;
+        }
+        input[type="text"]{
+            width:100%;
+        }
     }
+    .authorization{
+        order:6;
+    }
+    .block{
+        order:5;
+    }
+    .app{
+        padding:0;
+        width:435px;
+        order:4;
+    }
+    .telephone{
+        order:3;
+    }
+    .progress{
+        order:2;
+    }
+    
+    .comment{
+        order:1;
+    }
+   .bottom_menu{
+       order:0;
+   }
    
    
 }
