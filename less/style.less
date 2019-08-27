@@ -8,7 +8,18 @@ html{
     background-color:@colorback1;
    
 }
-@media screen and(max-width: 320px),(min-width:321px){
+.main-page__tittle{
+    span{
+    display:none;
+}
+}
+.lozung-desktop{
+    display:none;
+}
+.main-page__title-desktop{
+    display:none;
+}
+@media screen and(min-width: 320px){
     .main-page__tittle{
         span{
         display:none;
@@ -115,6 +126,7 @@ html{
         border:2px solid rgb(194, 194, 194);
         margin-top:40px;
         h3{
+            display:block;
             text-align:center;
             font-size:14px;
             margin-top:-8px;
@@ -192,7 +204,7 @@ html{
     }
     
 }
-@media(min-width:1000px){
+@media(min-width:1170px){
     .menu{
         text-align: center;
         background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;;
@@ -205,6 +217,11 @@ html{
      
     }
     .main-page{
+        text-align: center;
+        padding-left:90px;
+        padding-right:90px;
+        flex-direction: row;
+        flex-wrap:wrap;
         display:flex;
     }
     .lozung{
@@ -275,37 +292,94 @@ html{
         }
     }
     .authorization{
-        order:6;
+        flex-direction: row;
+        width:415px;
+        order:0;
+        padding:0;
+        margin-right:30px;
+        margin-top:20px;
     }
     .block{
-        order:5;
+        order:1;
     }
     .app{
+        margin-top:30px;
+        flex-direction:row;
         padding:0;
-        width:435px;
-        order:4;
+        width: 450px;
+        order:2;
+        margin-left:auto;
+        padding: 0 60px;
     }
     .telephone{
+        input[type="text"]{
+            margin-bottom:10px;
+        }
+        h2{
+            padding:0;
+            text-align:left;
+        }
         order:3;
+        width:960px;
+        padding: 0 200px;
+        h3{
+        display:block;
     }
+}
+.telephone__tel{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    h2{
+        order:1;
+        width:35%;
+
+    }
+    
+    input[type="text"]{
+        width:35%;
+       
+        order:0;
+    }
+}
+
     .progress{
-        order:2;
+        order:4;
+        width:960px;
+        padding: 0 200px;
     }
     
     .comment{
-        order:1;
+        order:5;
+        width:960px;
+        padding: 0 200px;
     }
    .bottom_menu{
-       order:0;
+       order:6;
+       width:960px;
+       padding: 0 200px;
+       button{
+         margin-left:60px;  
+       }
+       p1{
+margin-right:50px;
+       }
    }
-   
+   .news{
+       width:960px;
+       order:0;
+       padding: 0 200px;
+   }
    
 }
 .main-page{
     padding:0 40px;
 }
 .authorization{
-  
+    input[type="text"]{
+        padding-top:5px;
+        width:99%;
+    }
     background-color:@colorback1;
     padding:0;
     padding-bottom:20px;
@@ -331,7 +405,7 @@ html{
     margin:0;
     color:@colorred;
     padding-top:20px;
-    padding-bottom:10px;
+    padding-bottom:20px;
 }
 .app{
     background-color:@colorback2;
