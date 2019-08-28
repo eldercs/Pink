@@ -39,6 +39,25 @@ html{
 }
 }
 @media screen and(min-width: 700px){
+    .bottom_menu{
+        display:flex;
+        padding:0;
+        flex-direction: row;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width:100%;
+        height:80px;
+       
+        button{
+            margin-right:auto;
+            background-color:green;
+             color:@colorback1;
+             width:200px;
+        }
+        p1{
+            margin-left:auto;
+        }
+    }
     .main-page{
         display:flex;
         flex-direction: column-reverse;
@@ -74,6 +93,7 @@ html{
     .authorization {
         order:6;
         .block1{
+       
         display: flex;
     }
     .main-page__tittle{
@@ -104,8 +124,9 @@ html{
    
     
     .app{
+        
         border:2px solid rgb(194, 194, 194);
-        order:1;
+        order:5;
         background-color:@colorback1;
         h2{
             font-size:14px;
@@ -175,8 +196,8 @@ html{
           display:none;
        }
     }
-    .bottom_menu{
-        padding-top:10px;
+    
+       /* padding-top:10px;
         height:120px;
         font-size:14px;
         button{
@@ -196,12 +217,32 @@ html{
             margin-top:26px;
             position: absolute;
             right:45px;
-        }
-    }
+        }*/
+    
     
 }
 @media(min-width:1200px){
+    .bottom_menu{
+        display:flex;
+        padding:0;
+        flex-direction: row;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width:100%;
+        height:80px;
+       
+        button{
+            margin-right:auto;
+            background-color:green;
+             color:@colorback1;
+             width:200px;
+        }
+        p1{
+            margin-left:auto;
+        }
+    }
     .menu{
+        
         text-align: center;
         background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;;
         height:320px;
@@ -213,12 +254,19 @@ html{
      
     }
     .main-page{
-        text-align: center;
+        flex-direction: row;
+    flex-wrap: wrap;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
+    width: 1000px;
+    padding: 0 130px;
+    margin: 0 auto;
+       /* text-align: center;
         padding-left:90px;
         padding-right:90px;
         flex-direction: row;
         flex-wrap:wrap;
-        display:flex;
+        display:flex;*/
     }
     .lozung{
         display:none;
@@ -233,9 +281,16 @@ html{
     }
    
     .menu__navigator{
+        max-width:1400px;
+        min-width:1300px;
         display:flex;
         justify-content: space-between;
         text-transform: none;
+        box-sizing: border-box;
+        align-items:center;
+        padding: 0 100px;
+        margin:0 auto;
+        
      
        background-color: rgba(0, 0, 0, 0.3);
         
@@ -288,12 +343,18 @@ html{
         }
     }
     .authorization{
-        flex-direction: row;
+        margin-top: 14px;
+        margin-right: 70px;
+        padding: 0;
+        order:0;
+        margin:0;
+        max-width:1200px;
+       /* flex-direction: row;
         width:415px;
         order:0;
         padding:0;
         margin-right:30px;
-        margin-top:20px;
+        margin-top:20px;*/
     }
     .block{
         order:1;
@@ -303,7 +364,7 @@ html{
         flex-direction:row;
         padding:0;
         width: 450px;
-        order:2;
+        order:1;
         margin-left:auto;
         padding: 0 60px;
     }
@@ -340,9 +401,31 @@ html{
 }
 
     .progress{
+        h2{
+            margin-bottom: 30px;
+        margin-left: 194px;
+        order: 0;
+        width:400px;
+        margin-right:194px;
+    
+        // margin-left:auto;
+        }
+        p{
+            order:1;
+        margin-bottom:50px;
+        padding-left:60px;
+        left:0;
+        }
+        display:flex;
+        padding-left:50px;
+        padding-right:50px;
         order:4;
         width:960px;
-        padding:0 200px;
+     
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+     
     }
     
     .comment{
@@ -360,15 +443,11 @@ html{
         }
     }
    .bottom_menu{
+       display:flex;
        order:6;
        width:960px;
-       padding: 0 200px;
-       button{
-         margin-left:60px;  
-       }
-       p1{
-margin-right:50px;
-       }
+      margin-bottom: -13px; 
+      margin:0;
    }
    .news{
        width:960px;
@@ -376,18 +455,24 @@ margin-right:50px;
        padding: 0 200px;
    }
  
-   
+
 }
 .main-page{
-    padding:0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 auto;
+    padding: 0;
 }
 .authorization{
     input[type="text"]{
         padding-top:5px;
-        width:99%;
+        width:95%;
+        padding-left:5px;
+        border:1px solid rgb(199, 199, 199);
     }
     background-color:@colorback1;
-    padding:0;
+    padding:0 20px;
     padding-bottom:20px;
 }
 .authorization p {
@@ -397,6 +482,7 @@ margin-right:50px;
     color:@colorred;
 }
 .progress{
+    padding:0 10px;
     background-color: @colorback2;
 }
 .progress h2{
@@ -405,6 +491,7 @@ margin-right:50px;
 }
 .telephone{
     background-color:@colorback1;
+    padding:0 20px;
     padding-bottom: 20px;
 }
 .telephone h2{
@@ -525,6 +612,7 @@ p{
     background-color:@colorback2;
 
 }
+
 body{
     display:block;
     background:@colorback1;
@@ -536,4 +624,44 @@ body{
 }
 h1{
     margin:0;
+}
+.news{
+    padding:0 20px;
+}
+.bottom_menu{
+   
+   /* padding:0;
+ 
+    margin: 0 auto;
+    box-sizing: border-box;
+    width:100%;
+    height:80px;
+   
+    button{
+        margin-right:auto;
+        background-color:green;
+         color:@colorback1;
+         width:200px;
+    }
+    p1{
+        margin-left:auto;
+    }*/
+    padding-top:10px;
+        height:120px;
+        font-size:14px;
+        button{
+         background-color:green;
+         color:@colorback1;
+         font-size:18px;
+         height:60px;
+         margin-top:30px;
+         margin-left:5px;
+        }
+        p{
+margin-top:50px;
+           
+        }
+}
+.warning{
+    display:none;
 }
