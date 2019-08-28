@@ -33,11 +33,7 @@ html{
       display:none;
     }
 }
-.comment{
-    h2{
-        padding-top:35px;
-    }
-}
+
 .main-page__title-desktop{
     display:none;
 }
@@ -204,7 +200,7 @@ html{
     }
     
 }
-@media(min-width:1170px){
+@media(min-width:1200px){
     .menu{
         text-align: center;
         background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;;
@@ -346,13 +342,22 @@ html{
     .progress{
         order:4;
         width:960px;
-        padding: 0 200px;
+        padding:0 200px;
     }
     
     .comment{
         order:5;
         width:960px;
-        padding: 0 200px;
+        padding:0 200px;
+        h2{
+            padding-top:10px;
+        }
+        textarea{ 
+            height:120px;
+            width:95%;
+            margin-top:30px;
+            margin-bottom:50px;
+        }
     }
    .bottom_menu{
        order:6;
@@ -370,6 +375,7 @@ margin-right:50px;
        order:0;
        padding: 0 200px;
    }
+ 
    
 }
 .main-page{
