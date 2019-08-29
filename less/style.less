@@ -19,7 +19,7 @@ html{
 .main-page__title-desktop{
     display:none;
 }
-@media screen and(min-width: 320px){
+@media (min-width: 320px){
     .main-page__tittle{
         span{
         display:none;
@@ -38,7 +38,7 @@ html{
     display:none;
 }
 }
-@media screen and(min-width: 700px){
+@media (min-width: 700px){
     .bottom_menu{
         display:flex;
         padding:0;
@@ -178,6 +178,8 @@ html{
         border:2px solid rgb(194, 194, 194);
         margin-top:40px;
         margin-bottom:25px;
+        padding: 0 50px;
+        padding-bottom:40px;
         h2{
             text-align:center;
             font-size:14px;
@@ -195,6 +197,10 @@ html{
        .warning{
           display:none;
        }
+       .emotias{
+      width:100%;
+      
+    }
     }
     
        /* padding-top:10px;
@@ -401,47 +407,66 @@ html{
 }
 
     .progress{
+        width:960px;
+        padding-left:50px;
+        padding-right:50px;
+        flex-wrap: wrap;
+         height: 400px;
+        align-content: space-between;
+        justify-content: space-between;
         h2{
-            margin-bottom: 30px;
-        margin-left: 194px;
+        margin-bottom: 30px;
+        margin-left: 250px;
         order: 0;
         width:400px;
         margin-right:194px;
-    
-        // margin-left:auto;
+        padding-right:17px;
         }
         p{
-            order:1;
+           
+        font-size:18px;
+        order:1;
         margin-bottom:50px;
         padding-left:60px;
-        left:0;
+     
         }
         display:flex;
-        padding-left:50px;
+        
+      /*  padding-left:50px;
         padding-right:50px;
         order:4;
         width:960px;
-     
-        flex-direction: row;
+      
+        flex-wrap: wrap;
+        align-content: space-between;*/
+      /*  flex-direction: row;
         flex-wrap:wrap;
-        justify-content: space-between;
-     
+       // justify-content: space-between;
+        justify-content:space-between;*/
     }
-    
+    .check1{
+        margin-left:10px;
+    //   padding-right:px;
+    }
+    .check2{
+        padding-right:20px;
+        margin-right:13px;
+    }
     .comment{
         order:5;
         width:960px;
-        padding:0 200px;
+        padding:0 100px;
+
         h2{
             padding-top:10px;
         }
-        textarea{ 
-            height:120px;
-            width:95%;
-            margin-top:30px;
-            margin-bottom:50px;
-        }
+     
     }
+    .emotias{
+        
+       width:100%;
+    }
+   
    .bottom_menu{
        display:flex;
        order:6;
@@ -664,4 +689,10 @@ margin-top:50px;
 }
 .warning{
     display:none;
+}
+.emotias{
+    min-width:200px;
+    height:140px;
+    padding:10px;
+ border:1px solid grey;
 }
