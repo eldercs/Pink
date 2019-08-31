@@ -1,3 +1,4 @@
+@colorback1:#FFFFFF;
 .message{
         background-image: linear-gradient(to top left, transparent 50%, white 50%);
 }
@@ -12,7 +13,7 @@
 }
 .list__cell{
     background:#283645;
-    color:white;
+    color:@colorback1;
     text-align:center;
     border:2px solid rgb(189, 187, 187);
     border-top:none;
@@ -26,7 +27,7 @@
  
 }
 .list__enable{
-    background:white;
+    background:@colorback1;
   
 
 }
@@ -124,4 +125,47 @@
     min-height:80px;
     width:280px;
 }
+}
+@media(min-width:1200px){
+    .menu2{
+        height:600px;
+        text-align: center;
+        background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;
+        color:@colorback1;
+    }
+    .page-main__photo{
+        display:none;
+    }
+    .menu__wrapper{
+        height:100%;
+    }
+    .menu__settings{
+        padding:0 120px;
+        margin:0 auto;
+    }
+    .menu__intro{
+        height:100%;
+        display:flex;
+        width:300px;
+        justify-content: space-around;
+        flex-direction:column;
+        text-align:center;
+    }
+    .apps{
+        justify-content: space-around;
+
+        height:30px;
+        color:@colorback1;
+        display:flex;
+        max-width:320px;
+        width:100%;
+    }
+    .menu__see{
+        margin:108px 28px 22px;
+    }
+    .menu__device{
+        margin: 58px 0;
+        font-size:20px;
+
+    }
 }
