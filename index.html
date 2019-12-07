@@ -13,16 +13,16 @@
             <h1>PINK
             <img src = "res/close1.png" width = "20px" align = "right">
             </h1>   
-            <nav class = "menu__item">
-                <div class = "button__menu"><img src = "res/menu.png" alt = "кнопокчка" width="50" height = "50"></div>
-                    <ul class = "menu__list">
+            <div class = "button__menu"><img src = "res/menu.png"  alt = "кнопокчка" width="50" height = "50" onclick = "myFunction()" class = "button__menu2"></div>
+            <nav class = "menu__item" id = "menu_itemid">
+                    <ul class = "menu__list" id = "menu_listid">
                         <li style = "border-top:1px solid rgb(0, 0, 0);"><a href = "#">Главная</a></li>
                         <li><a href = "#">Фотографим</a></li>
                         <li><a href = "#">Конкурс</a></li>
                         <li><a href = "#">HTML ACADEMY</a></li>
                     </ul>
             </nav>
-        </div>
+    </div>
         <div class = "menu__settings">
         <div class = "menu__intro">
             <h1 class = "menu__see">Взгляни на жизнь иначе!</h1>
@@ -183,5 +183,10 @@
     </div>
 </div>
 </footer>
+<script>
+    function myFunction() {
+        document.getElementById("menu_itemid").classList.toggle("show");
+}
+</script>
     </body>
 </html>

@@ -22,6 +22,7 @@ html{
     display:none;
 }
 
+
 @media (min-width: 320px){
     .open__menu{
 position: absolute;
@@ -57,23 +58,71 @@ border:none;
     background-color:blue;
     box-shadow:0 8 px 0 0 blue, 0 16px 0 0 blue;
 }
-.menu__item{ // выпадающая менюшка
-    background-image:url("/res/menu.png");
-    display:inline-block;
-    position: relative;
+.menu__item
+{
+  //  position: relative;
+    display: inline-block;
 }
-.menu__item:hover .menu__list{ // клик
+.button__menu{
+    right:50px;
+    position: absolute;
     display:block;
+    z-index: 0;
 }
+.menu__item .menu__list{ // выпадающая менюшка
+   // background-image:url("/res/menu.png");
+   // display:inline-block;
+   // position: relative;
+   right: 69px;
+   position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
+    z-index: 1;
+    
+}
+.menu__item a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+/*.menu__item{
+.menu__list{
+display:block;
+}
+}*/
+/*.menu__item:hover .menu__list{ // клик
+    display:block;
+}*/
+/*
 .menu__item .button__menu{
+    position: relative;  
     width:50px;
     padding:0;
     margin:0;
-    position: relative;  
+    
     cursor: pointer;
 }
+
 .menu__item  .menu__list{
-    display:none;
+    position: absolute;
+    top:10px;
+    right:40px;
+    min-width:100px;
+    width:200px;
+    z-index: 1;
+    li{
+        background:green;
+        margin:0;
+   
+        padding:25px 35px;
+        border:1px solid white;
+    }*/
+    /*
     top:10px;
     right:40px;
     min-width:100px;
@@ -84,10 +133,13 @@ border:none;
     li{
         margin:0;
         padding:25px 35px;
-        border:1px solid red;
-    }
+        border:1px solid white;
+    }*/
+//}
+.menu__item{
+    display:none;
 }
-
+.show {display: block;}
 /*.menu__item .menu__list{
     display:none;
     position: absolute;
@@ -379,13 +431,13 @@ border:none;
         
     }
   
-    .menu__navigator{
+    .menu__navigator{ // добавить контент для адаптации
         height:90px;
         background-color: rgba(0, 0, 0, 0.3);
         //max-width:1400px;
         min-width:1200px;
         display:flex;
-        justify-content: space-between;
+      //  justify-content: space-between;
         text-transform: none;
         box-sizing: border-box;
         align-items:center;
@@ -407,7 +459,7 @@ border:none;
         font-weight:100;
        
     }
-    .menu__list{
+    /*.menu__list{
         display:flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -417,7 +469,7 @@ border:none;
             margin-right:100px;
             border-bottom:none;
         }
-    }
+    }*/
     .authorization{
        .main-page__title-desktop{
            padding-top:60px;
