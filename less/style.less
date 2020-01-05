@@ -62,6 +62,7 @@ border:none;
 {
   //  position: relative;
     display: inline-block;
+  
 }
 .button__menu{
     right:50px;
@@ -70,16 +71,16 @@ border:none;
     z-index: 0;
 }
 .menu__item .menu__list{ // выпадающая менюшка
-   // background-image:url("/res/menu.png");
-   // display:inline-block;
-   // position: relative;
+ 
+
    right: 69px;
    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 100px;
+    min-width: 250px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-   
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(33,18,47,1) 15%, rgba(182,121,74,1) 100%);
+    color:white;
     z-index: 1;
     img{
         position: absolute;
@@ -91,7 +92,7 @@ border:none;
 }
 
 .menu__item a {
-    color: black;
+    color: rgb(218, 202, 202);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
