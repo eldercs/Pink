@@ -1,6 +1,6 @@
 @colorback1:#FFFFFF;
 .message{
-        background-image: linear-gradient(to top left, transparent 50%, white 50%);
+       position: relative;
 }
 .list-buy{
    table{
@@ -30,6 +30,21 @@
     background:@colorback1;
 }
 
+.apple-icon{
+    width:60px;
+    height:60px;    
+    background:url(/res/logo-apple.svg) center no-repeat;
+}
+.android-icon{
+    width:60px;
+    height:60px;    
+    background:url(/res/logo-android.svg) center no-repeat;
+}
+.windows-icon{
+    width:60px;
+    height:60px;    
+    background:url(/res/logo-microsoft.svg) center no-repeat;
+}
 @media(min-width:320px){
     .time{
        display:none;
@@ -127,23 +142,26 @@
 }
 @media(min-width:1200px){
     .menu2{
-        height:600px;
+        height:700px;
         text-align: center;
         background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;
+        background:url("/res/iphone-hand.png") no-repeat  300px 100px;
         color:@colorback1;
     }
     .page-main__photo{
         display:none;
     }
-    .menu__wrapper{
-        height:100%;
-    }
-    .menu__settings{
+  
+  
+    // картинки в центр
+  /*  .menu__settings{
         padding:0 120px;
         margin:0 auto;
-    }
+    }*/
+   
     .menu__intro{
-        text-align:center;
+        text-align:left;
+        margin-left:200px;
         height:100%;
         display:flex;
         width:100%;
@@ -153,7 +171,9 @@
     }
     .apps{
         justify-content: space-around;
-        margin:auto;
+        margin-top:36px;
+        margin-bottom:36px;
+      //  margin:auto;
         height:30px;
         color:@colorback1;
         display:flex;
@@ -161,7 +181,9 @@
         width:100%;
     }
     .menu__see{
-        margin:108px 28px 22px;
+        width:250px;
+        font-size: 50px;
+        margin:108px 0px 22px;
     }
     .menu__device{
         margin: 58px 0;
@@ -169,8 +191,18 @@
 
     }
     .message{
+        padding: 64px 0 70px;   
+    }
+    .message::after{
+        content: "";
+        position: absolute;
+        left:0;
         font-size:22px;
-        margin-top:40px;
+       // padding-top:40px;
+        width:100%;
+        bottom: -94px;
+        height: 94px;
+        background-image: linear-gradient(to top left, transparent 50%, white 50%);
     }
     .adventages{
         padding-top:200px;
@@ -182,7 +214,7 @@
         margin:0 auto;
         max-width:1200px;
         .telephone-image{
-display:none;
+        display:none;
         }
     }
     .info-item{
