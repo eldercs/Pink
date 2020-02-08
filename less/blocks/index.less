@@ -48,6 +48,7 @@
 .adventages__wrapper{
     padding-top:60px;
 }
+
 @media(min-width:320px){
     .time{
        display:none;
@@ -61,7 +62,7 @@
     .time__container{
         
         max-width:50%;
-        margin:0 0 30px auto;
+    //    margin:0 0 30px auto;
         h2{
             font-size:30px;
         }
@@ -111,6 +112,7 @@
         h2{
         text-align:center;
     }
+    
 }
 .communication{
     display: flex;
@@ -155,7 +157,7 @@
         display:none;
     }
   
-  
+   
     // картинки в центр
   /*  .menu__settings{
         padding:0 120px;
@@ -247,14 +249,36 @@
         padding:0;
     }
     .time__container{
+        position: relative;
         max-width:65%;
+        margin:10px auto 100px;
+        padding:0 130px;
+      
+
         br{
             display:none;
         }
     }
+    .time__container::after{
+        content: "24";
+        color:red;
+        position: absolute;
+        z-index: 10;
+        font-size: 120px;
+        line-height: 180px;
+        top: 15px;
+        padding: 105px 97px 85px 93px;
+        left: 115px;
+        background-size: 300px 346px;
+        background-position: 13px 5px;
+        background:url("/res/icon-timer.svg") no-repeat;
+
+
+    }
     .time__info{
+        max-width:550px;
         padding-bottom:120px;
-        margin-right:280px;
+        margin: 0 0 30px auto;
         font-size:18px;
     h2{
         margin:0;
@@ -262,4 +286,25 @@
         padding-bottom:50px;
     }
     }
+    .page-footer{
+    
+        z-index: 10;
+        display:flex;
+        height:208px;
+        padding:0 130px;
+        max-width:1200px;
+        margin:0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+     
+    }
+    .page-footer__logo .logo__sparks {
+        opacity: 2;
+    }
+    .page-footer__logo .logo__glasses {
+        opacity: 0;
+    }  
+    
+   
 }
