@@ -1,4 +1,7 @@
 @colorback1:#FFFFFF;
+.page-main-d{
+    display:none;
+}
 .message{
        position: relative;
 }
@@ -59,10 +62,11 @@
        display:block;
        text-align:left;
     }
+   
     .time__container{
         
         max-width:50%;
-    //    margin:0 0 30px auto;
+   
         h2{
             font-size:30px;
         }
@@ -146,6 +150,9 @@
 }
 }
 @media(min-width:1200px){
+    .page-main-d{
+        display:block;
+    }
     .menu2{
         height:700px;
         text-align: center;
@@ -156,7 +163,7 @@
     .page-main__photo{
         display:none;
     }
-  
+   
    
     // картинки в центр
   /*  .menu__settings{
@@ -166,10 +173,11 @@
    
     .menu__intro{
         text-align:left;
-        margin-left:200px;
+       // margin-left:200px;
+       padding-left:200px;
         height:100%;
         display:flex;
-        width:100%;
+       // width:100%;
         justify-content: space-around;
         flex-direction:column;
         
