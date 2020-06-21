@@ -26,7 +26,7 @@ html{
     display:none;
 }
 .button__close{
-    display:none;
+   // display:none;
 }
 
 @media (min-width: 680px){
@@ -72,23 +72,24 @@ border:none;
   
 }
 .button__menu{
-    margin-left:20px;
-    //margin-right:10px;
+    max-width:1300px;
+  // margin:0 auto auto 1050px;
+  margin: auto;
+    padding-right:10px;
+  //  margin-left:20px;
     right:50px;
     position: absolute;
     display:block;
     z-index: 0;
 }
 .menu__item .menu__list{ // выпадающая менюшка
- 
-
-   right: 69px;
+   right: 99px;
    position: absolute;
     min-width: 250px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(33,18,47,1) 15%, rgba(182,121,74,1) 100%);
+    background: linear-gradient(180deg,rgb(81, 81, 146) 0%, blue 15%, rgba(182,121,74,1) 100%);
     color:white;
     z-index: 1;
     img{
@@ -157,7 +158,7 @@ display:block;
     display:none;
 }
 .button__close{
-    display:none;
+//    display:none;
 }
 .menu__item{
     display:none;
@@ -438,8 +439,9 @@ display:block;
     .menu__navigator{ // добавить контент для адаптации
         height:90px;
         background-color: rgba(0, 0, 0, 0.3);
-        //max-width:1400px;
-        min-width:1200px;
+        max-width:1400px;
+        
+       // min-width:1200px;
         display:flex;
       //  justify-content: space-between;
         text-transform: none;
