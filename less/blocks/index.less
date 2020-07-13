@@ -58,12 +58,47 @@
     padding-top:60px;
 }
 
-@media(min-width:320px){
+@media(min-width:320px)and(max-width:700px){
     .time{
        display:none;
     }
+    .button__close{
+        display:none;
+    }
+    .apps2{
+        display:flex;
+            justify-content: center;
+            margin-top:36px;
+            margin-bottom:36px;
+          //  margin:auto;
+            height:30px;
+            color:@colorback1;
+            width:100%;
+            a{
+                padding:0 20px 0 20px;
+            }
+        }
 }
+
 @media (min-width: 700px){
+    .menu2{
+        height:780px;
+      //  text-align: center;
+        background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;
+        color:@colorback1;
+    }
+    
+    
+   
+    .menu__intro-container{
+        width:100%;
+        text-align:left;
+        width:300px;
+       // min-height:650px;
+        display:flex;
+        justify-content: space-around;
+        flex-direction:column;
+    }
     .list__enable{
         min-width:150px;
         height:60px;
@@ -91,125 +126,153 @@
   .menu__list{
         background-color: rgba(0, 0, 0, 0.3);
 }
+.page-main__photo{
+    display:none;
 }
-@media(min-width:1000px){
+.time{
+   display:block;
+   text-align:left;
+}
 
-    .time{
-       display:block;
-       text-align:left;
-    }
-   
-    .time__container{
-        
-        max-width:50%;
-   
-        h2{
-            font-size:30px;
-        }
-        p{
-            min-height:90px;
-        }
-    }
-    .message-telephone{
-        display:none;
-    }
-    .adventages__wrapper{
-  //      padding-top:50px;
-        padding-bottom:10px;
-        position: relative;
-        max-width:960px;
-    }
-    .info-item{
-        text-align:left;
-        margin-left:400px;
-        margin-bottom:30px;
-    }
-    .reviews{
-        text-align:center;
-        display:none;
-    }
-    .revies__text{
-        min-height:90px;
-        font-size:18px;
-    }
-
-    .revies__button{
-        display:flex;
-        width:75px; 
-        justify-content: space-around;
-        margin:0 auto;
-        height:30px;
-        margin-bottom:10px
-    }
-    .reviews__name{
-        font-size:26px;
-        font-weight:800;
-        font-style:normal;
-        span{
-            font-size:22px;
-            font-weight: 400;
-        }
-    }
-    .button__travel{
-        width:9px;
-        border-color:black;
-        height:9px;
-        border:1px solid grey;
-        background:grey;
-        border-radius:100%;
-    }
-    .page-footer__info{
-        h1{
-            font-size:50px;
-            margin-top:40px;
-            margin-bottom:30px;
-            font-weight: 200;
-        }
-        h2{
-            text-align:center;
-        }
+.time__container{
     
+    max-width:50%;
+
+    h2{
+        font-size:30px;
+    }
+    p{
+        min-height:90px;
+    }
+}
+.message-telephone{
+    display:none;
+}
+.adventages__wrapper{
+//      padding-top:50px;
+    padding-bottom:10px;
+    position: relative;
+    max-width:960px;
+}
+.info-item{
+    text-align:left;
+    margin-left:400px;
+    margin-bottom:30px;
+}
+.reviews{
+    text-align:center;
+    display:none;
+}
+.revies__text{
+    min-height:90px;
+    font-size:18px;
+}
+
+.revies__button{
+    display:flex;
+    width:75px; 
+    justify-content: space-around;
+    margin:0 auto;
+    height:30px;
+    margin-bottom:10px
+}
+.reviews__name{
+    font-size:26px;
+    font-weight:800;
+    font-style:normal;
+    span{
+        font-size:22px;
+        font-weight: 400;
+    }
+}
+.button__travel{
+    width:9px;
+    border-color:black;
+    height:9px;
+    border:1px solid grey;
+    background:grey;
+    border-radius:100%;
+}
+.page-footer__info{
+    h1{
+        font-size:50px;
+        margin-top:40px;
+        margin-bottom:30px;
+        font-weight: 200;
+    }
+    h2{
+        text-align:center;
+    }
+
 }
 .communication{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    font-size:24px;
-    color:rgb(156, 48, 102);
+display: flex;
+flex-wrap:wrap;
+justify-content: space-around;
+font-size:24px;
+color:rgb(156, 48, 102);
 }
 .communication__cell{
-    margin-bottom:20px;
-    margin-right:10px;
-    margin-left:10px;
-    margin-top:20px;
-    min-height:80px;
-    width:280px;
-  
+margin-bottom:20px;
+margin-right:10px;
+margin-left:10px;
+margin-top:20px;
+min-height:80px;
+width:280px;
+
 }
 .communication__text{
-    span{
-        display:block;
-       color: #283645;
-       margin-bottom:10px;
-    }
+span{
+    display:block;
+   color: #283645;
+   margin-bottom:10px;
+}
 }
 .communication__write{
-    margin-bottom:20px;
-    margin-right:10px;
-    margin-left:10px;
-    margin-top:20px;
-    min-height:80px;
-    width:280px;
+margin-bottom:20px;
+margin-right:10px;
+margin-left:10px;
+margin-top:20px;
+min-height:80px;
+width:280px;
 }
 .communication__invite{
-    margin-bottom:20px;
-    margin-right:10px;
-    margin-left:10px;
-    margin-top:20px;
-    min-height:80px;
-    width:280px;
+margin-bottom:20px;
+margin-right:10px;
+margin-left:10px;
+margin-top:20px;
+min-height:80px;
+width:280px;
 }
 }
+@media (min-width: 700px)and (max-width:1200px){
+.page-header{
+    height:600px;
+}
+.menu2{
+  //  height:600px;
+}
+.menu__settings{
+  //  height:100%;
+}
+.menu__settings{
+    max-width:1100px;
+ }
+.menu__intro{
+    background:url("/res/iphone-hand.png") no-repeat right 80px;
+    background-size:700px auto;
+    text-align:left;
+    padding: 0 40px;
+    //max-width:1200px;
+    min-width:600px;
+   max-width:1100px;
+   height:500px;
+}
+}
+
+    .apps{
+        display:none;
+    }
 @media(min-width:1200px){
     .button__menu{
         display:block;
@@ -217,13 +280,7 @@
     .page-main-d{
         display:block;
     }
-    .menu2{
-        height:700px;
-        text-align: center;
-        background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;
-        
-        color:@colorback1;
-    }
+    
     .page-main__photo{
         display:none;
     }
@@ -234,14 +291,18 @@
         padding:0 120px;
         margin:0 auto;
     }*/
-   
     .menu__intro{
-        background:url("/res/iphone-hand.png") no-repeat  300px 50px;
-        text-align:left;
-        max-width:1200px;
-        margin:0 auto;
-       padding-left:200px;
         height:100%;
+        background:url("/res/iphone-hand.png") no-repeat right 45px;
+    }
+   .menu__settings{
+    height: 100%;
+   }
+    .menu__intro-container{
+        width:350px;
+       text-align:left;
+        max-width:1200px;
+       padding-left:200px;
         display:flex;
         justify-content: space-around;
         flex-direction:column;
@@ -264,6 +325,8 @@
         margin:108px 0px 22px;
     }
     .menu__device{
+        text-align:left;
+        padding-left:200px;
         margin: 58px 0;
         font-size:20px;
 
