@@ -84,7 +84,7 @@
     .menu2{
         height:780px;
       //  text-align: center;
-        background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;
+     //   background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;
         color:@colorback1;
     }
     
@@ -249,15 +249,58 @@ width:280px;
 .page-header{
     height:600px;
 }
-.menu2{
-  //  height:600px;
+.message{
+    font-size:26px;
 }
-
-
+.message::after{
+    content:"";
+    position: absolute;
+    width:100%;
+    left:0;
+    height:80px;
+  //  bottom:-60px;
+    z-index: 10;
+    background-image: linear-gradient(to top left, transparent 50%, white 50%);
+}
+.iphone-d{
+    display:none;
+}
+.info-item{
+    h3{
+        padding-bottom:10px;
+        font-size:22px;
+    }
+    p1{
+        color:rgb(80, 80, 80);
+    }
+    margin-left:500px;
+    padding-top:20px;
+}
+.item1{
+    padding-top:80px;
+}
+.adventages__wrapper{
+    padding-top:20px;
+    min-height:540px;
+}
+.adventages__wrapper::after{
+    content: "";
+    width:400px;
+    bottom:0;
+    top:10px;
+    left:10px;
+    position: absolute;
+    z-index: 20;
+    background:url("/img/iphone-d3.png")left 90%  no-repeat;
+    background-size:500px;
+}
+.telephone-image{
+    display:none;
+}
 .menu__intro{
-    background:url("/res/iphone-hand.png") no-repeat right 80px;
-    background-position:right -60px bottom;
-    background-size:700px auto;
+    background:url("/res/iphone-hand.png") no-repeat right;
+    background-position:right -60px bottom -2px;
+    background-size:740px auto;
     text-align:left;
     padding: 0 40px;
     //max-width:1200px;
@@ -270,7 +313,7 @@ width:280px;
     width: 350px;
     text-align: left;
     max-width: 1200px;
-    padding-left: 80px;
+    padding-left: 40px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -306,7 +349,7 @@ width:280px;
 }
 .menu__device {
     text-align: left;
-    padding-left: 80px;
+    padding-left: 40px;
     margin: 58px 0;
     font-size: 20px;
 }
