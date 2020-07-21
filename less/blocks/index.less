@@ -135,7 +135,6 @@
 }
 
 .time__container{
-    
     max-width:50%;
 
     h2{
@@ -252,6 +251,30 @@ width:280px;
 .message{
     font-size:26px;
 }
+.time{
+    margin-bottom:120px;
+}
+.time__container::after{
+    content: "24";
+    color:red;
+    position: absolute;
+    z-index: 10;
+    font-size: 100px;
+    bottom:-430px;
+    line-height: 180px;
+    padding: 65px 117px 85px 73px;
+    left: 35px;
+    background:url("/res/icon-timer.svg") no-repeat;
+    background-size: 240px;
+}
+.time__container{
+    text-align:left;
+    margin-top:50px;
+    margin-left:50%;
+    a{
+        color:red;
+    }
+}
 .message::after{
     content:"";
     position: absolute;
@@ -353,6 +376,7 @@ width:280px;
     margin: 58px 0;
     font-size: 20px;
 }
+
 }
 
     .apps{
