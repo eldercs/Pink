@@ -93,27 +93,32 @@
         </div>
     </div>
     <div class = "reviews-table">
+        
         <blockquote>
             <p class="revies__text">Это приложение перевернуло мой мир и позволило по-новому <br> взгялнуть на привычне серые вещи! А
             еще  я познакомился со своей <br> будущей женой в комментариях к выложеной фотографии!</p>
             <cite class = "reviews__name">
-                Николай Петрович!!
+               <p class = "reviews__name-p reviews__name-p1" id = "reviews__name-p1">Николай Петрович!! </p>
+               <p class = "reviews__name-p reviews__name-p2" id = "reviews__name-p2">Дручевский Денис</p>
+               <p class = "reviews__name-p reviews__name-p3" id = "reviews__name-p3">Иван Иванович</p>
                 <br>
                 <span>25 лет, водитель трамвая</span>
             </cite>
-           
         </blockquote>
         <div class = "revies__button">
-            <label class = "button__travel"></label>
-            <label class = "button__travel"></label>
-            <label class = "button__travel"></label>
+            <input type="radio"  name="reviews" id="reviews-1" onclick = "show_text(id);">
+            <label for = "reviews-1" class = "button__travel button__travel1"></label>
+            <input type="radio"  name="reviews" id="reviews-2" onclick = "show_text(id);">
+            <label for = "reviews-2" class = "button__travel button__travel2" ></label>
+            <input type="radio"  name="reviews" id="reviews-3" onclick = "show_text(id);">
+            <label for = "reviews-3" class = "button__travel button__travel3"></label>
         </div>
     </div>
 </main>
 <section class = "reviews">
     <div class = "reviews__wrapper">
     <blockquote class = "reviews__item">
-        <p><cite class = "reviews__person">Николай Петрович</cite></p>
+        <p><cite class = "reviews__person reviews__person1">Николай Петрович</cite></p>
         <br>
         <p1 class = "reviews__text"><Это приложение перевернуло мой мир <br> и позволило по-новому взглянуть на <br> привычные серые вещи! А еще я
         <br> познакомился со своей будущей женой <br> в комментариях выложеной <br>фотографии!>></p1>
@@ -326,7 +331,27 @@
 <script>
     function myFunction() {
         document.getElementById("menu_itemid").classList.toggle("show");
-}
+    }
+    function show_text(id){
+        let text1 = document.getElementById("reviews__name-p1");
+        let text2 = document.getElementById("reviews__name-p2");
+        let text3 = document.getElementById("reviews__name-p3");
+        text1.style.display = "none";
+        text2.style.display = "none";
+        text3.style.display = "none";
+        if(id == "reviews-1"){
+        let text = document.getElementById("reviews__name-p1");
+        text.style.display = "block";
+        }
+        else if(id == "reviews-2"){
+        let text = document.getElementById("reviews__name-p2");
+        text.style.display = "block";
+        }
+        else if (id == "reviews-3"){
+        let text = document.getElementById("reviews__name-p3");
+        text.style.display = "block";
+        }
+    }
 </script>
     </body>
 </html>

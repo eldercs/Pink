@@ -57,7 +57,9 @@
 .adventages__wrapper{
     padding-top:60px;
 }
-
+.rogue{
+    display:none;
+}
 @media(min-width:320px)and(max-width:700px){
     .time{
        display:none;
@@ -185,12 +187,12 @@
     }
 }
 .button__travel{
-    width:9px;
+   /* width:9px;
     border-color:black;
     height:9px;
     border:1px solid grey;
     background:grey;
-    border-radius:100%;
+    border-radius:100%;*/
 }
 .page-footer__info{
     h1{
@@ -260,7 +262,7 @@ width:280px;
     position: absolute;
     z-index: 10;
     font-size: 100px;
-    bottom:-430px;
+    bottom:-860px;
     line-height: 180px;
     padding: 65px 117px 85px 73px;
     left: 35px;
@@ -275,6 +277,42 @@ width:280px;
         color:red;
     }
 }
+.revies__button input[type="radio"]{
+    display:none; 
+  }
+.button__travel{
+    display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+    user-select: none;
+    padding:0 15px 0 15px;
+}
+.button__travel:before{
+    content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	left: 0;
+    bottom: 1px;
+    border:2px solid black;
+    border-radius: 100%;
+    background:white;
+}
+.reviews__name-p{
+    display:none;
+}
+
+
+.revies__button input[type="radio"]:checked + label:before  {
+    background:red;
+}
+
+
+
 .message::after{
     content:"";
     position: absolute;
