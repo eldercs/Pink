@@ -83,15 +83,28 @@
 }
 
 @media (min-width: 700px){
+    .page-footer{
+    
+        z-index: 10;
+        display:flex;
+        height:150px;
+        padding:0 130px;
+        max-width:1200px;
+        margin:0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+     
+    }
     .menu2{
         height:780px;
       //  text-align: center;
      //   background:url("/Pink/res/fon-desktop.jpg")no-repeat center 0;
         color:@colorback1;
     }
-    
-    
-   
+    .reviews__name-p2,.reviews__name-p3{
+        display:none;
+    }
     .menu__intro-container{
         width:100%;
         text-align:left;
@@ -116,27 +129,27 @@
         width:28%;
         font-size:22px;
     }
-.list_toggles{
+    .list_toggles{
     display:none;
 }
-.page-header .page-header__top h1{
+    .page-header .page-header__top h1{
     background-color: rgba(0, 0, 0, 0.3);
         text-align:left;
         display:block;
         color:white;
 }
-  .menu__list{
+    .menu__list{
         background-color: rgba(0, 0, 0, 0.3);
 }
-.page-main__photo{
+    .page-main__photo{
     display:none;
 }
-.time{
+    .time{
    display:block;
    text-align:left;
 }
 
-.time__container{
+    .time__container{
     max-width:50%;
 
     h2{
@@ -247,6 +260,29 @@ width:280px;
 }
 }
 @media (min-width: 700px)and (max-width:1200px){
+.page-footer__develop span{
+    display:inline-block;
+    vertical-align: middle;
+    margin-bottom:40px;
+    color:black;
+    font-size:28px;
+}
+.page-footer{
+    padding:0 45px;
+}
+.page-footer__develop a{
+    color:white;
+}
+.social-link {
+    padding:15px;
+    display:inline-block;
+    border:2px solid grey;
+    border-radius:50%;
+    margin:0 13px 0 13px;
+}
+.logo-academy{
+    margin-top:20px;
+}
 .page-header{
     height:600px;
 }
@@ -269,6 +305,7 @@ width:280px;
     background:url("/res/icon-timer.svg") no-repeat;
     background-size: 240px;
 }
+
 .time__container{
     text-align:left;
     margin-top:50px;
@@ -302,11 +339,6 @@ width:280px;
     border-radius: 100%;
     background:white;
 }
-.reviews__name-p{
-    display:none;
-}
-
-
 .revies__button input[type="radio"]:checked + label:before  {
     background:red;
 }
@@ -583,19 +615,7 @@ width:280px;
         padding-bottom:50px;
     }
     }
-    .page-footer{
-    
-        z-index: 10;
-        display:flex;
-        height:208px;
-        padding:0 130px;
-        max-width:1200px;
-        margin:0 auto;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-     
-    }
+
     .page-footer__logo .logo__sparks {
         opacity: 2;
     }
