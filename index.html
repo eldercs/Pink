@@ -10,12 +10,13 @@
         <div class = "menu2">
    <div class = "menu__navigator">
        <div class = "page-header__top">
-            <h1>PINK</h1>   
+            <h1 class = "logo-project">PINK</h1>   
         </div>
             <div class = "button__menu"><img src = "res/menu.png"  alt = "кнопокчка" width="50" height = "50" onclick = "myFunction()" class = "button__menu2"></div>
+            <img class = "button__close" src = "res/close.png" width ="40px" position = "top" onclick = "myFunction2()">
             <nav class = "menu__item" id = "menu_itemid">
                     <ul class = "menu__list" id = "menu_listid">
-                        <li style = "border-top:1px solid rgb(0, 0, 0);"><img class = "button__close" src = "res/close.png" width ="40px" position = "top" onclick = "myFunction()"><a href = "#">Главная</a></li>
+                        <li style = "border-top:1px solid rgb(0, 0, 0);"><a href = "#">Главная</a></li>
                         <li><a href = "#">Фотографим</a></li>
                         <li><a href = "#">Конкурс</a></li>
                         <li><a href = "#">HTML ACADEMY</a></li>
@@ -331,6 +332,21 @@
 <script>
     function myFunction() {
         document.getElementById("menu_itemid").classList.toggle("show");
+        let menu = document.querySelector(".menu__navigator");
+        menu.style.background = "#283645";
+        let button = document.querySelector(".button__menu");
+        button.style.display = "none";
+        let button_cl = document.querySelector(".button__close");
+        button_cl.style.display = "block";
+    }
+    function myFunction2(){
+        document.getElementById("menu_itemid").classList.toggle("show");
+        let menu = document.querySelector(".menu__navigator");
+        menu.style.background = "rgba(0, 0, 0, 0.3)";
+        let button = document.querySelector(".button__menu");
+        button.style.display = "block";
+        let button_cl = document.querySelector(".button__close");
+        button_cl.style.display = "none";
     }
     function show_text(id){
         let text1 = document.getElementById("reviews__name-p1");

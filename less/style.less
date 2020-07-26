@@ -22,13 +22,10 @@ html{
 .main-page__title-desktop{
     display:none;
 }
-.button__menu{
+
+.button__close{
     display:none;
 }
-.button__close{
-   // display:none;
-}
-
 @media (min-width: 700px){
     .menu__navigator{ // добавить контент для адаптации
         height:90px;
@@ -45,8 +42,7 @@ html{
         margin:0 auto;
       
         a  {  
-       
-        font-size:14px;
+        font-size:20px;
         }
       
         h1{
@@ -63,19 +59,17 @@ html{
         background-size:38px;
     }
 .open__menu{
-position: absolute;
-top:0;
-right:0;
-z-index:2;
-
-display:block;
-width:70px;
-height:50px;
-
-background-color:rgb(75, 48, 48);   
-cursor: pointer;
-border:none;
-&:hover, &:active{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index:2;
+    display:block;
+    width:70px;
+    height:50px;
+    background-color:rgb(75, 48, 48);   
+    cursor: pointer;
+    border:none;
+    &:hover, &:active{
     background-color:red;
 }
 }
@@ -104,23 +98,22 @@ border:none;
 }
 .button__menu{
     max-width:1300px;
-  // margin:0 auto auto 1050px;
-  margin: auto;
+    margin: auto;
     padding-right:10px;
-  //  margin-left:20px;
     right:50px;
     position: absolute;
     display:block;
     z-index: 0;
 }
 .menu__item .menu__list{ // выпадающая менюшка
-   right: 99px;
-   position: absolute;
+    right: 99px;
+    position: absolute;
     min-width: 250px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background: rgb(2,0,36);
-    background: linear-gradient(180deg,rgb(81, 81, 146) 0%, blue 15%, rgba(182,121,74,1) 100%);
+    //background: linear-gradient(180deg,rgb(81, 81, 146) 0%, blue 15%, rgba(182,121,74,1) 100%);
+    background:#283645;
     color:white;
     z-index: 1;
     img{
@@ -133,104 +126,18 @@ border:none;
 }
 
 .menu__item a {
-    color: rgb(218, 202, 202);
+    color: white;
     padding: 12px 16px;
      text-decoration: none;
     display: block;
     
 }
-/*.menu__item{
-.menu__list{
-display:block;
-}
-}*/
-/*.menu__item:hover .menu__list{ // клик
-    display:block;
-}*/
-/*
-.menu__item .button__menu{
-    position: relative;  
-    width:50px;
-    padding:0;
-    margin:0;
-    
-    cursor: pointer;
-}
 
-.menu__item  .menu__list{
-    position: absolute;
-    top:10px;
-    right:40px;
-    min-width:100px;
-    width:200px;
-    z-index: 1;
-    li{
-        background:green;
-        margin:0;
-   
-        padding:25px 35px;
-        border:1px solid white;
-    }*/
-    /*
-    top:10px;
-    right:40px;
-    min-width:100px;
-    width:200px;
-    position: absolute;
-  
-    background:green;
-    li{
-        margin:0;
-        padding:25px 35px;
-        border:1px solid white;
-    }*/
-//}
-.button__menu{
-    display:none;
-}
-.button__close{
-//    display:none;
-}
 .menu__item{
     display:none;
 }
 .show {display: block;}
-/*.menu__item .menu__list{
-    display:none;
-    position: absolute;
-    margin:0;
-    padding:0;
-    top:20px;
-    right:100px;
-    background-color:rgb(90, 69, 31);
-}
-.menu__list > li{
 
-    display:block;
-    border:2px solid red;
-    list-style-type:none;
-    text-decoration: none;
-}*/
-/*.open__button:not(:focus):not(:active){
-        position: absolute;
-        width:1px;
-        height:1px;
-        margin:-1px;
-        border:0;
-        padding:0;
-
-        white-space: nowrap;
-        clip-path:inset(100%);
-
-        clip:rect(0 0 0 0);
-        overflow: hidden;
-    }
-
-    .main-page__tittle{
-        span{
-        display:none;
-    }*/
-//}
 .lozung-desktop{
     display:none;
 }
@@ -475,17 +382,6 @@ display:block;
         font-weight:100;
        
     }
-    /*.menu__list{
-        display:flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        li{
-            margin-left:20px;
-            padding-top:25px;
-            margin-right:100px;
-            border-bottom:none;
-        }
-    }*/
     .authorization{
        .main-page__title-desktop{
            padding-top:60px;

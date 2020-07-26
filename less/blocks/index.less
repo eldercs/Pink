@@ -64,9 +64,6 @@
     .time{
        display:none;
     }
-    .button__close{
-        display:none;
-    }
     .apps2{
         display:flex;
             justify-content: center;
@@ -79,7 +76,63 @@
             a{
                 padding:0 20px 0 20px;
             }
+    }
+    .menu__navigator{
+        height:90px;
+        background-color: rgba(0, 0, 0, 0.3);
+        max-width:1400px;
+        display:flex;
+        text-transform: none;
+        box-sizing: border-box;
+        align-items:center;
+        padding: 0 50px;
+        margin:0 auto;
+        justify-content: space-between;
+    }
+    .logo-project{
+        color:white;
+        text-align:left;
+    }
+    .menu__item{
+        display:none;
+    }
+    .show{
+        display:block;
+    }
+    .menu__settings{
+        display:block;
+        min-height:400px;
+        color:white;
+    }
+    .menu__device{
+        display:none;
+    }
+    .menu__item .menu__list{ // выпадающая менюшка
+       // right: 99px;
+       right:0;
+        position: absolute;
+        width: 100%;
+        top:85px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        font-size:18px;
+      //  background: rgb(2,0,36);
+        //background: linear-gradient(180deg,rgb(81, 81, 146) 0%, blue 15%, rgba(182,121,74,1) 100%);
+        background:#283645;
+        color:white;
+        z-index: 1;
+        img{
+            position: absolute;
+            margin:0;
+            padding:0;
+            right:0px;
+            top:10px;
         }
+    }
+    .button__close{
+        position: absolute;
+        right:50px;
+    }
 }
 
 @media (min-width: 700px){
@@ -95,6 +148,10 @@
         align-items: center;
         justify-content: space-between;
      
+    }
+    .button__close{
+        position: absolute;
+        right:50px;
     }
     .menu2{
         height:780px;
@@ -133,7 +190,7 @@
     display:none;
 }
     .page-header .page-header__top h1{
-    background-color: rgba(0, 0, 0, 0.3);
+  //  background-color: rgba(0, 0, 0, 0.3);
         text-align:left;
         display:block;
         color:white;
@@ -199,14 +256,7 @@
         font-weight: 400;
     }
 }
-.button__travel{
-   /* width:9px;
-    border-color:black;
-    height:9px;
-    border:1px solid grey;
-    background:grey;
-    border-radius:100%;*/
-}
+
 .page-footer__info{
     h1{
         font-size:50px;
@@ -260,6 +310,21 @@ width:280px;
 }
 }
 @media (min-width: 700px)and (max-width:1200px){
+.menu__item .menu__list{ // выпадающая менюшка
+    position: absolute;
+    top:85px;
+    font-size:28px;
+    right:0;
+    margin:0;
+    width:100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    //background: linear-gradient(180deg,rgb(81, 81, 146) 0%, blue 15%, rgba(182,121,74,1) 100%);
+    background:#283645;
+    color:white;
+    z-index: 1;
+    
+}
 .page-footer__develop span{
     display:inline-block;
     vertical-align: middle;
