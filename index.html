@@ -94,9 +94,9 @@
     </div>
     <div class = "reviews-table">
         
-        <blockquote>
-            <p class="revies__text">Это приложение перевернуло мой мир и позволило по-новому <br> взгялнуть на привычне серые вещи! А
-            еще  я познакомился со своей <br> будущей женой в комментариях к выложеной фотографии!</p>
+        <blockquote class ="reviews__flex">
+            <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому  взгялнуть на привычне серые вещи! А
+            еще  я познакомился со своей  будущей женой в комментариях к выложеной фотографии!</p>
             <cite class = "reviews__name">
                <p class = "reviews__name-p reviews__name-p1" id = "reviews__name-p1">Николай Петрович!! </p>
                <p class = "reviews__name-p reviews__name-p2" id = "reviews__name-p2">Дручевский Денис</p>
@@ -115,26 +115,18 @@
         </div>
     </div>
 </main>
-<section class = "reviews">
-    <div class = "reviews__wrapper">
-    <blockquote class = "reviews__item">
-        <p><cite class = "reviews__person reviews__person1">Николай Петрович</cite></p>
-        <br>
-        <p1 class = "reviews__text"><Это приложение перевернуло мой мир <br> и позволило по-новому взглянуть на <br> привычные серые вещи! А еще я
-        <br> познакомился со своей будущей женой <br> в комментариях выложеной <br>фотографии!>></p1>
-    </blockquote>
-    </div>
-    <p class = "reviews__toggles slider__button">
-        <button class = "slider_toggle" type = "button">1</button>
-        <button class = "slider_toggle" type = "button">2</button>
-        <button class = "slider_toggle" type = "button">3</button>
-    </p> 
-</section>
 <section class = "list-buy">
+    <div class = "list__button">
+        <input type="radio"  name="list" class = "list__check list__check1"  id="list-1" checked >
+        <label for = "list-1" class = "button__list button__list1"></label>
+        <input type="radio"  name="list" class = "list__check list__check2" id="list-2">
+        <label for = "list-2" class = "button__list button__list2"></label>
+        <input type="radio"  name="list" class = "list__check list__check3"  id="list-3">
+        <label for = "list-3" class = "button__list button__list3"></label>
 <table class = "list__table">
     <tbody>
         <tr class = "list__item">
-            <th></th>
+            <th class = "pusto"></th>
             <th class = "list__cell">
                 <p>База</p> 
                 <span>1,99 usd</span>
@@ -149,7 +141,7 @@
             </th>
         </tr>
         <tr>
-            <td class = "list__enable">
+            <td class = "list__enable list__enable-name">
                 Розовый фильтр
             </td>
             <td class = "list__enable list__enable_cr">
@@ -164,7 +156,7 @@
 
         </tr>
         <tr>
-            <td class = "list__enable">Смайлики</td>
+            <td class = "list__enable list__enable-name">Смайлики</td>
             <td class = "list__enable list__enable_z">
                 -
             </td>
@@ -176,7 +168,7 @@
             </td>
         </tr>
         <tr>
-            <td class = "list__enable">Комментарии</td>
+            <td class = "list__enable list__enable-name">Комментарии</td>
             <td class = "list__enable list__enable_z">
                 -   
             </td>
@@ -188,12 +180,9 @@
             </td>
         </tr>
     </tbody>
+    
 </table>
-<p class = "list_toggles slider__button">
-        <button class = "slider_toggle" type = "button">1</button>
-        <button class = "slider_toggle" type = "button">2</button>
-        <button class = "slider_toggle" type = "button">3</button>
-    </p>
+</div>
 </section>
 
 <div class = "page-footer__info">
@@ -368,6 +357,29 @@
         }
         else 
         alert("lol u die");
+    }
+    function table2(w){
+ 
+       if(w == "list-1"){
+            let width2 = document.querySelector(".list__table");
+            width2.style.left = "-80%";
+            let name = document.querySelector(".list__enable-name");
+            name.style.left = "26%";
+        }
+        else if(w == "list-2"){
+            let width2 = document.querySelector(".list__table");
+            width2.style.left = "-168%";
+            for(let i = 0; i< 4; i++){
+            let name = document.querySelector(".list__enable-name");
+            name.style.left = "51.5%";
+            }
+        }
+        else if(w == "list-3"){
+            let width2 = document.querySelector(".list__table");
+            width2.style.left = "-255%";
+            let name = document.querySelector(".list__enable-name");
+            name.style.left = "76.5%";
+        }
     }
 </script>
     </body>
