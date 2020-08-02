@@ -9,32 +9,30 @@
        
         <header class = "page-header">
             <div class = "menu">
-                <div class = "menu__wrapper">
-                <div class = "menu__navigator">
-            <h1>PINK
-            <img src = "res/close1.png" width = "20px" align = "right">
-            </h1>   
-            
-            <nav class = "menu__item menu--closed">
-                    <button class = "open__menu" type = "button"><span class = "open__button">Открытие меню</span></button>
-                    <ul class = "menu__list">
+               <div class = "menu__navigator">
+       <div class = "page-header__top">
+            <h1 class = "logo-project">PINK</h1>   
+        </div>
+            <div class = "button__menu"><img src = "res/menu.png"  alt = "кнопокчка" width="50" height = "50" onclick = "myFunction()" class = "button__menu2"></div>
+            <img class = "button__close" src = "res/close.png" width ="40px" position = "top" onclick = "myFunction2()">
+            <nav class = "menu__item" id = "menu_itemid">
+                    <ul class = "menu__list" id = "menu_listid">
                         <li style = "border-top:1px solid rgb(0, 0, 0);"><a href = "#">Главная</a></li>
                         <li><a href = "#">Фотографим</a></li>
-                        <li><a href = "#">Конкурс</a></li>
+                        <li><a href = "form.html">Конкурс</a></li>
                         <li><a href = "#">HTML ACADEMY</a></li>
                     </ul>
             </nav>
-        </div>
     </div>
-                <div class = "contest">
-                <p class = "lozung" align = "center">Конкурс на самое <br> безбашенное <br> путешествие с Пинк</p>
+    <div class = "content">
+                <p class = "lozung" align = "center">Конкурс на самое  безбашенное путешествие с Пинк</p>
                 <p class = "lozung-desktop">Конкурс на самое безбашенное<br> путешествие с Пинк</p>
                 </div>
             </div>
         </header>
         <main class = "main-page">
            <div class = "news">
-                <p class = "main-page__tittle">Поделитесь своей историей и получите<br>шанс выиграть ценный приз - 1000 <br> миль на вашу бонусную карту!
+                <p class = "main-page__tittle">Поделитесь своей историей и получитешанс выиграть ценный приз - 1000  миль на вашу бонусную карту!
                 <span>Пожалуйста, заполните форму ниже:</span>
                 </p>
                 <p class = "main-page__title-desktop">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на<br>вашу бонсуную карту! Пожалуйста, заполните форму ниже:</p>
@@ -43,15 +41,15 @@
                
                 <div class ="block1">
                 <h2 class = "FIO">ФАМИЛИЯ:</h2>
-                <input type = "text" name = "surname" value = "Введите фамилию *">
+                <input type = "text" name = "surname" value = "Введите фамилию *" class = "block__text">
                 </div>
                 <div class ="block1">
                 <h2 class = "FIO">ИМЯ:</h2>
-                <input type = "text" name = "name" value = "Введите имя *">
+                <input type = "text" name = "name" value = "Введите имя *" class = "block__text">
                 </div>
                 <div class ="block1">
                 <h2 class = "FIO">ОТЧЕСТВО:</h2>
-                <input type = "text" name = "otchestvo" value = "Ну и отчество тоже">
+                <input type = "text" name = "otchestvo" value = "Ну и отчество тоже" class = "block__text">
                 </div>
                 </div>
             </div>
@@ -111,4 +109,24 @@
             </div>
         </footer>
     </body>
+    <script>
+        function myFunction() {
+        document.getElementById("menu_itemid").classList.toggle("show");
+        let menu = document.querySelector(".menu__navigator");
+        menu.style.background = "#283645";
+        let button = document.querySelector(".button__menu");
+        button.style.display = "none";
+        let button_cl = document.querySelector(".button__close");
+        button_cl.style.display = "block";
+    }
+    function myFunction2(){
+        document.getElementById("menu_itemid").classList.toggle("show");
+        let menu = document.querySelector(".menu__navigator");
+        menu.style.background = "rgba(0, 0, 0, 0.3)";
+        let button = document.querySelector(".button__menu");
+        button.style.display = "block";
+        let button_cl = document.querySelector(".button__close");
+        button_cl.style.display = "none";
+    }
+    </script>
 </html>

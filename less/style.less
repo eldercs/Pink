@@ -5,6 +5,7 @@
 @import "blocks/page-header.less";
 @import "blocks/index.less";
 @import "blocks/photo.less";
+@import "blocks/form.less";
 html{
     font-family: "sans-serif","Open Sans";
     background-color:@colorback1;
@@ -182,31 +183,7 @@ body{
     .main-page__title-desktop{
         display:none;
     }
-    .authorization p, .authorization h2{
-        text-align:center;
-        padding-top:14px;
-        padding-left:15px;
-      
-    }  
-    .authorization p{
-        font-size:12pt;
-    }
-    .authorization h2{
-        font-size:10pt;
-    }
-    input[type="text"]{
-        width:95%;
-        border:1px solid silver;
-        height:20px;
-        padding-top:8px;
-        padding-left:10px;
-        padding-bottom:5px;
-        margin-top:12px;
-        margin-left:10px;
-        margin-right:15px;
-        font-size:12pt;
-       
-    }
+
     .authorization {
         order:6;
         .block1{
@@ -530,17 +507,10 @@ body{
 }
 .authorization{
     input[type="text"]{
-        padding-top:5px;
-        width:95%;
-        padding-left:5px;
+       // width:95%;
         border:1px solid rgb(199, 199, 199);
     }
     background-color:@colorback1;
-    padding:0 20px;
-    padding-bottom:20px;
-}
-.authorization p {
-    text-align: center;
 }
 .authorization h2{
     color:@colorred;
