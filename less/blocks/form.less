@@ -38,8 +38,8 @@
 .block__text{
     font-size:20px;
     padding:20px 35px 20px;
-    min-width:320px;
-    max-width:0px;
+    min-width:220px;
+    max-width:420px;
 }
 .progress__in{
     display:flex;
@@ -85,7 +85,143 @@
     background:white;
 }
 .progress__in input:checked + .progress-check::before{
-    background: url("/img/gal-red.png") no-repeat center;
+    background: white url("/img/gal-red.png") no-repeat center;
     background-size:32px;
+}
+.telephone {
+    h3{
+        display:none;
+    }
+    .t1,.t2{
+        font-size: 22px;
+        font-weight: 300;
+        text-align:left;
+        padding-left:20px;
+    }
+}
+.telephone__tel{
+    display:flex;
+    max-width:450px;
+    margin:0 auto;
+    min-width:320px;
+    flex-direction: column;
+}
+.telephone__inp{
+    margin-top:5px;
+    margin-bottom:30px;
+    padding:15px 0 15px;
+    padding-left:20px;
+    font-size:20px;
+}
+.app{
+    input[type="radio"]{
+        display:none;
+    }
+    h2{
+        margin-top:20px;
+    }
+}
+.app__rad{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width:440px;
+    min-width: 320px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.app-text{
+    font-size:20px;
+    margin-bottom:40px;
+    position: relative;
+    text-align:left;
+    padding-left:65px;
+}
+.app-text::before{
+    content: "";
+    position: absolute;
+    left:0;
+    top:-8px;
+    width:35px;
+    height:35px;
+    background:white;
+    border-radius: 50%;
+    border:2px solid grey;
+}
+.app-text::after{
+    content: "";
+    position: absolute;
+    left:12px;
+    top:3px;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+}
+.app__rad input:checked + .app-text::after{
+    background: rgb(216, 32, 78);
+}
+.comment{
+    margin:50px auto 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width:480px;
+    min-width: 320px;
+    h2{
+        font-size:18px;
+        font-weight: 300;
+        margin-bottom:20px;
+    }
+    .emotias{
+        font-size:18px;
+        padding:10px 20px;
+        height:160px;
+        width:320px;
+    }
+}
+.bottom_menu{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin:0 auto;
+    max-width:520px;
+    min-width:320px;
+   
+}
+.bottom-b{
+    background:rgb(13, 126, 92);
+    color:white;
+    border:none;
+    font-size:20px;
+    height:65px;
+    min-width:360px;
+}
+.bottom-text{
+    margin:30px auto 20px;
+    font-size:20px;
+}
+.footer-page{
+    margin-top:20px;
+}
+.footer-icon{
+    display:inline-block;
+    border:2px solid rgb(182, 182, 182);
+    border-radius: 50%;
+    margin-right:10px;
+    margin-left:10px;
+}
+.footer-pink{
+    margin-bottom:30px;
+}
+.logo-academy{
+    fill:#D22856;
+}
+.footer-worker{
+    span{
+    display:inline-block;
+    font-size:18px;
+    vertical-align:middle;
+    margin-bottom:20px;
+    }
 }
 }
