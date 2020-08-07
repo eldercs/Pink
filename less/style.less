@@ -44,10 +44,6 @@ body{
         a {  
         font-size:20px;
         }
-        h1{
-            padding-left:90px;
-            padding-top:15px;
-        }
     }
     .list__enable_cr{
         background:white url("/res/gal.svg") no-repeat center;
@@ -104,25 +100,7 @@ body{
     display:block;
     z-index: 0;
 }
-.menu__item .menu__list{ // выпадающая менюшка
-    right: 99px;
-    position: absolute;
-    min-width: 250px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background: rgb(2,0,36);
-    //background: linear-gradient(180deg,rgb(81, 81, 146) 0%, blue 15%, rgba(182,121,74,1) 100%);
-    background:#283645;
-    color:white;
-    z-index: 1;
-    img{
-        position: absolute;
-        margin:0;
-        padding:0;
-        right:0px;
-        top:10px;
-    }
-}
+
 
 .menu__item a {
     color: white;
@@ -150,9 +128,34 @@ body{
     display:none;
 }
 }
-@media (min-width:700px)and(max-width: 1200px){
+@media (min-width:700px)and(max-width: 1199px){
 .menu__navigator{
     padding:0;
+}
+.menu__item .menu__list{ // выпадающая менюшка
+    right: 99px;
+    position: absolute;
+    min-width: 250px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: rgb(2,0,36);
+    //background: linear-gradient(180deg,rgb(81, 81, 146) 0%, blue 15%, rgba(182,121,74,1) 100%);
+    background:#283645;
+    color:white;
+    z-index: 1;
+    img{
+        position: absolute;
+        margin:0;
+        padding:0;
+        right:0px;
+        top:10px;
+    }
+}
+.menu__navigator{ // добавить контент для адаптации
+    h1{
+        padding-left:90px;
+        padding-top:15px;
+    }
 }
 }
 @media (min-width: 1200px){
@@ -223,10 +226,10 @@ body{
         order:5;
         background-color:@colorback1;
         h2{
-            font-size:14px;
-            margin-top:-24px;
+            font-size:12px;
+            margin-top:-10px;
             background-color:white;
-            max-width:370px;
+            max-width:420px;
             text-align:center;  
             margin-left:auto;
             margin-right:auto;
@@ -335,14 +338,10 @@ body{
     -ms-grid-row-align: stretch;
     align-items: stretch;
     width: 1000px;
-    padding: 0 130px;
     margin: 0 auto;
      
     }
-    .lozung{
-        display:none;
-       
-    }
+
     .lozung-desktop{
         font-size:34pt;
         text-align:center;
@@ -486,7 +485,7 @@ body{
    .news{
        width:960px;
        order:0;
-       padding: 0 200px;
+     
    }
  
 
