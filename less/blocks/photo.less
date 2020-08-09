@@ -62,5 +62,62 @@
         background: url("/img/icon/icon-heart.svg") no-repeat 0px 4px;
         
     }
+    .main-bot{
+        font-size:12px;
+        h2{font-weight: 200;}
+    }
+    .redactor{
+       padding-top:20px;
+    }
+    .redactor__tools{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 250px;
+        padding-top: 30px;
+        margin:0 auto;
+    }
+    .tools-1{
+        padding-right:5px;
+    }
+    .tools-3{   
+        margin-top:5px;
+    }
+    .red-tools{
+        cursor: pointer;
+        opacity: 0.3;
+        height:55px;
+        width: 55px;
+    }
+
+    .red-tools:hover{
+        opacity: 1;
+        fill:#d22856
+    }
+    .redactor__button{
+        margin-top:30px;
+    }
+    input[type=range]{
+        margin-top:10px;
+    -webkit-appearance: none;
+    width:100%;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+    border-radius: 10px;
+    height: 2px;
+    border: 1px solid #000;
+   
+    }
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background-color: white;
+        border: 2px solid red;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: -8px;
+        }
 
 }
