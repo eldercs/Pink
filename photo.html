@@ -7,104 +7,123 @@
     </head>
     <body>
         <header class = "page-header">
-                <div class = "menu">
-                        <div class = "menu__wrapper">
-                <div class = "menu__navigator">
-            <h1>PINK
-            <img src = "res/close1.png" width = "20px" align = "right">
-            </h1>   
-                    <nav class = "menu__item">
-                    <ul class = "menu__list">
-                        <li style = "border-top:1px solid rgb(0, 0, 0);"><a href = "#">Главная</a></li>
-                        <li><a href = "#">Фотографим</a></li>
-                        <li><a href = "#">Конкурс</a></li>
-                        <li><a href = "#">HTML ACADEMY</a></li>
-                    </ul>
-                    </nav>
+            <div class = "menu">
+             <div class = "menu__navigator">
+                <div class = "page-header__top">
+                    <h1 class = "logo-project">PINK</h1>   
                 </div>
-                        </div>
+                    <div class = "button__menu"><img src = "res/menu.png"  alt = "кнопокчка" width="50" height = "50" onclick = "myFunction()" class = "button__menu2"></div>
+                    <img class = "button__close" src = "res/close.png" width ="40px" position = "top" onclick = "myFunction2()">
+                    <nav class = "menu__item" id = "menu_itemid">
+                        <ul class = "menu__list" id = "menu_listid">
+                        <li style = "border-top:1px solid rgb(0, 0, 0);"><a href = "#">Главная</a></li>
+                        <li><a href = "photo.html">Фотографим</a></li>
+                        <li><a href = "form.html">Конкурс</a></li>
+                        <li><a href = "#">HTML ACADEMY</a></li>
+                     </ul>
+                 </nav>
+            </div>
         <div class = "contest">
-                    <p class = "lozung" align = "center">Фотографии<br>пользователей</p>
+                    <p class = "lozung" align = "center">Фотографии пользователей</p>
         </div>
                 </div>  
         </header>
         <main class = "main-page3">
             <div class = "main-page__intro">
                 <div class = "main-page__head">
-                <h1>Взгляните на фотографии, которые<br> выкладывают пользователи!<br> Видите, как не хватает ваших ? </h1>
+                <h1 >Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших ? </h1>
                 </div>
           <div class = "photo">
-            <blockquote class = "main-page__anna">
-                <img src = "#" alt = "most">
+            <blockquote class = "main-page__anna main-page__anna-panorama">
+                <picture>
+                    <img src = "/img/panorama-mobile@1x.jpg" srcset="/img/panorama-mobile@1x.jpg 2px">
+                </picture>
                 <div class = "photo__deskription photo__like">
                 <city class = "anna"><b>Анна</b> 
                 <span>(5 МИНУТ НАЗАД)</span>
                 </city>
-                <p class = "photo__text">Прыгать или нет ? Напишите в<br> комментарии свой совет и смотрите<br> прямую трансляцию  в перископе,<br> задавайте свои вопросы!</p>
+                <p class = "photo__text">Прыгать или нет ? Напишите в комментарии свой совет и смотрите прямую трансляцию  в перископе, задавайте свои вопросы!</p>
                <div class = "like">
-                <img class = "like" src = "#" alt = "like">
-                <p1 class = "like">НРАВИТСЯ: 215</p1>
+                <p class = "like-text">НРАВИТСЯ: 215</p>
                 </div>
             </div>
-                </blockquote>
+            </blockquote>
             <blockquote class = "main-page__person">
-                <img src = "#" alt = "automobile">
-                <div class = "photo__deskription">
+                <picture>
+                    <img src = "/img/photo-1-mobile@1x.jpg" srcset="/img/photo-1-mobile@1x.jpg 2px">
+                </picture>
+                <div class = "photo__deskription photo__like">
                 <city><b>Левон</b>
                 <span>(5 ЧАСОВ НАЗАД)</span></city>
                 <p>Вчера на улице летал, сегодня в руки к нам попал.</p>
-                <img class= "like" src= "#" alt = "like">
-                <p1>НРАВИТСЯ: 356</p1>
+                <div class = "like">
+                <p class = "like-text">НРАВИТСЯ: 356</p>
+                </div>
                 </div>
             </blockquote>
-            <blockquote class = "main-page__anton">
-                <img src = "#" alt = "music">
-                <div class = "photo__deskription">
+            <blockquote class = "main-page__anton ">
+                <picture>
+                    <img src = "/img/photo-2-mobile@1x.jpg" srcset="/img/photo-2-mobile@1x.jpg 2px">
+                </picture>
+                <div class = "photo__deskription photo__like">
                 <city><b>Антон</b>
                 <span>(12 ЧАСОВ НАЗАД)</span></city>
                 <p>Соседи будут рады!</p>
-                <img class = "like"src = "#" alt = "like">
-                <p1>НРАВИТСЯ:666</p1>
+                <div class = "like">
+                <p class = "like-text">НРАВИТСЯ:666</p>
+                </div>
                 </div>
             </blockquote>  
             <blockquote class = "main-page__boris">
-                <img src = "#" alt = "glass">
-                <div class = "photo__deskription">
+                <picture>
+                    <img src = "/img/photo-3-mobile@1x.jpg" srcset="/img/photo-3-mobile@1x.jpg 2px">
+                </picture>
+                <div class = "photo__deskription photo__like">
                 <city><b>Борис</b>
                 <span>(20 ЧАСОВ НАЗАД)</span></city>
                 <p>Здесь могла быть ваша цитата о <br>высоком и вечном.</p>
-                <img class = "like" src = "#" alt = "like">
-                <p1>НРАВИТСЯ:215</p1>
+                <div class = "like">
+                <p class = "like-text">НРАВИТСЯ:215</p>
+                </div>
                 </div>
             </blockquote>
             <blockquote class = "main-page__sergey">
-                <img src = "#" alt = "Kuba">
-                <div class = "photo__deskription">
+                <picture>
+                    <img src = "/img/photo-4-mobile@1x.jpg" srcset="/img/photo-4-mobile@1x.jpg 2px">
+                </picture>
+                <div class = "photo__deskription photo__like">
                 <city><b>Сергей</b>
                 <span>(25 ЧАСОВ НАЗАД)</span></city>
                 <p>Самая кубанская в мире!</p>
-                <img class = "like" src = "#" alt = "like">
-                <p1>НРАВИТСЯ:4</p1>
+                <div class = "like">
+                <p class = "like-text">НРАВИТСЯ:4</p>
+                </div>
                 </div>
             </blockquote> 
             <blockquote class = "main-page__maks">    
-                <img src = "#" alt = "mountain">
-                <div class = "photo__deskription">
+                <picture>
+                    <img src = "/img/photo-5-mobile@1x.jpg" srcset="/img/photo-5-mobile@1x.jpg 2px">
+                </picture>
+                <div class = "photo__deskription photo__like">
                 <city><b>Максим</b>
                 <span>(40 ЧАСОВ НАЗАД)</span></city>
                 <p>Где снег-то</p>
-                <img class = "like" src = "#" alt = "like">
-                <p1>НРАВИТСЯ:150</p1>
+                <div class = "like">
+                <p class = "like-text">НРАВИТСЯ:150</p>
+                </div>
                 </div>
             </blockquote>
             <blockquote class = "main-page__nade">
-                <img src = "#" alt = "aitlane">
-                <div class = "photo__deskription">
+                <picture>
+                    <img src = "/img/photo-6-mobile@1x.jpg" srcset="/img/photo-6-mobile@1x.jpg 2px">
+                </picture>
+                <div class = "photo__deskription photo__like">
                 <city><b>Надежда</b>
                 <span>(45 ЧАСОВ НАЗАД)</span></city>
                 <p>Всем GM и взаимные лайки!</p>
-                <img class = "like" src = "#" alt = "like">
-                <p1>НРАВИТСЯ:2560</p1>
+                <div class = "like">
+                <p class = "like-text">НРАВИТСЯ:2560</p>
+                </div>
                 </div>
             </blockquote>
         </div>
@@ -142,4 +161,24 @@
             <img class = "footer-page__creater" src = "#" alt = "creater html academy">
         </footer>
     </body>
+    <script>
+        function myFunction() {
+        document.getElementById("menu_itemid").classList.toggle("show");
+        let menu = document.querySelector(".menu__navigator");
+        menu.style.background = "#283645";
+        let button = document.querySelector(".button__menu");
+        button.style.display = "none";
+        let button_cl = document.querySelector(".button__close");
+        button_cl.style.display = "block";
+    }
+    function myFunction2(){
+        document.getElementById("menu_itemid").classList.toggle("show");
+        let menu = document.querySelector(".menu__navigator");
+        menu.style.background = "rgba(0, 0, 0, 0.3)";
+        let button = document.querySelector(".button__menu");
+        button.style.display = "block";
+        let button_cl = document.querySelector(".button__close");
+        button_cl.style.display = "none";
+    }
+    </script>
 </html>
