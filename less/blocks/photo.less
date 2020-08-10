@@ -1,3 +1,14 @@
+.like-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #d22856;
+    text-transform: uppercase; 
+    margin: 9px 0; 
+    padding-left: 35px;
+    background: url("/img/icon/icon-heart.svg") no-repeat 0px 4px;
+    
+}
 @media (min-width: 320px)and (max-width:700px){
     .contest{
       min-height:200px;
@@ -16,7 +27,7 @@
        
     }
     blockquote{
-        width:360px;
+        width:320px;
         margin:0 auto;
         margin-bottom:20px;
     }
@@ -51,17 +62,7 @@
         color:rgb(167, 4, 80);
         margin-top:12px;
     }
-    .like-text{
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #d22856;
-        text-transform: uppercase; 
-        margin: 9px 0; 
-        padding-left: 35px;
-        background: url("/img/icon/icon-heart.svg") no-repeat 0px 4px;
-        
-    }
+
     .main-bot{
         font-size:12px;
         h2{font-weight: 200;}
@@ -150,5 +151,56 @@
     .contest{
         font-size:50px;
         padding:20px 70px ;
+    }
+    .main-page__head{
+        font-size: 10px;
+        padding:0 70px 0;
+        margin:70px auto 50px;
+        h1{
+            font-weight:300;
+        }
+    }
+    .photo{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width:700px;
+        align-items: baseline;
+        justify-content: center;
+        margin: 0 auto;
+     
+    }
+    .main-page__anna-panorama{
+        width:700px;
+    }
+    .photo__deskription{
+        margin:0 10px;
+        padding:10px 10px;
+        text-align:left;
+    }
+    .main-page__person,.main-page__anton{
+        width:300px;
+        margin:0;
+    }
+    .page-item{
+        margin:0 10px 30px;
+    }
+    .main-page__anna-panorama::after{
+        content:"панорама дня";
+        position: absolute;
+        top: 0px;
+        text-transform: uppercase;
+        right: 60px;
+        background-color: #d22856;
+        color:white;
+        width:170px;
+        height:32px;
+        padding-top: 12px;
+        margin-top:30px;
+        font-size:16px;
+    }
+
+    .main-page__anna-panorama{
+        position: relative;
     }
 }
