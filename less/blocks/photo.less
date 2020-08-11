@@ -292,3 +292,175 @@
         margin-bottom:40px;
     }
 }
+@media (min-width: 700px){
+    input[type=range]{
+        margin-top:10px;
+        -webkit-appearance: none;
+        width:100%;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        border-radius: 10px;
+        height: 2px;
+        border: 1px solid #000;
+    
+    }
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background-color: white;
+        border: 2px solid red;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: -8px;
+    }
+    .main-bot{
+        font-size:14px;
+        margin-bottom:40px;
+        h2{
+            font-weight: 300;
+        }
+    }
+    .redactor-fse{
+        padding:30px 0 10px;
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+.red-tools{
+    opacity: 1;
+    fill:#d22856;
+    margin-bottom:20px;
+}
+.slider4{
+    display:none;
+}
+.red-tools{
+    display:flex;
+    flex-direction: row;
+    background: transparent;
+    svg{
+        padding-right:40px;
+    }
+}
+.redactor__photo{
+    margin-left:20px;
+}
+.redactor__tools{
+    margin-left:30px;
+    flex-grow: 1;
+    padding-right:40px;
+}
+.slider{
+    background: transparent;
+}
+.redactor__start{
+    color:rgb(173, 38, 78);
+    border:3px solid rgb(173, 38, 78);
+    background:transparent;
+    border-radius: 120px;
+    font-size:18px;
+    padding:14px 0 16px;
+    margin-bottom:15px;
+    width:250px;
+}
+.redactor__cancel{
+    color:rgb(173, 173, 173);
+    border:3px solid rgb(173, 173, 173);
+    background:transparent;
+    border-radius: 120px;
+    font-size:18px;
+    padding:14px 0 16px;
+    margin-bottom:40px;
+    width:250px;
+}
+}
+@media (min-width: 1200px){
+    .contest{
+        font-size:50px;
+        max-width:500px;
+        margin:0 auto;
+    }
+    .redactor-fse{
+        max-width:920px;
+        margin:0 auto;
+    }
+    .redactor__button{
+        margin-top:80px;
+    }
+    .redactor__start{
+        margin-right:30px;
+    }
+    .main-page__head{
+        h1{
+            font-size:20px;
+            font-weight:300;
+        }
+        max-width:700px;
+        margin:90px auto 80px;
+    }
+
+    .main-page__anna-panorama::after{
+        content:"панорама дня";
+        position: absolute;
+        top: 0px;
+        text-transform: uppercase;
+        right: 60px;
+        background-color: #d22856;
+        color:white;
+        width:170px;
+        height:32px;
+        padding-top: 12px;
+        margin-top:30px;
+        font-size:16px;
+    }
+
+    .main-page__anna-panorama{
+        position: relative;
+        width:1200px;
+        margin:0 auto;
+    }
+    .photo__deskription{
+        text-align:left;
+    }
+    .photo__like{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:20px 30px;
+        margin:0 70px;
+    }
+    .anna{
+        order:0;
+    }
+    .like-panorama{
+        order:1;
+    }
+    .photo__text{
+        order:2;
+    }
+    .text-pan{
+        padding-right:40px;
+       // padding-left:0;
+       background-position: 140px 0px;
+       margin-bottom:10px;
+       line-height: 12px;
+    }
+    .page-item{
+        width:300px;
+    }
+    .photo{
+        width:1200px;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin:0 auto;
+    }
+    .photo__deskription{
+        margin:0 10px;
+        padding:10px 10px;
+        text-align:left;
+    }
+}
+
