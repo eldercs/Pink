@@ -31,6 +31,13 @@ body{
 .button__close{
     display:none;
 }
+@media (min-width: 320px) and(max-width: 1200px){
+.menu__list li{
+    padding-top:15px;
+    padding-bottom:15px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+}
 @media (min-width: 700px){
     .menu__navigator{ // добавить контент для адаптации
         height:90px;
@@ -40,11 +47,14 @@ body{
         text-transform: none;
         box-sizing: border-box;
         align-items:center;
-        padding: 0 100px;
+        padding: 0 120px;
         margin:0 auto;
         a {  
         font-size:20px;
         }
+    }
+    .menu__item{
+        margin-top:10px;
     }
     .list__enable_cr{
         background:white url("/res/gal.svg") no-repeat center;
@@ -131,14 +141,14 @@ body{
 }
 @media (min-width:700px)and(max-width: 1199px){
 .menu__navigator{
-    padding:0;
+    padding:0 120px;
 }
 .menu__item .menu__list{ // выпадающая менюшка
     // right: 99px;
     right:0;
      position: absolute;
      width: 100%;
-     top:65px;
+     top:85px;
      overflow: auto;
      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
      font-size:18px;
@@ -288,6 +298,9 @@ body{
     
 }
 @media(min-width:1200px){
+    .menu__item{
+        margin:15px auto 0;
+    }
     .menu__navigator{
         width:100%;
         max-width:100%;
@@ -500,11 +513,7 @@ body{
     background-color:@colorback1;
 }
 
-.menu__list li{
-    padding-top:15px;
-    padding-bottom:15px;
-    border-bottom: 1px solid rgb(0, 0, 0);
-}
+
 .menu__list a{
     color:rgb(228, 227, 227);
     text-decoration: none;
