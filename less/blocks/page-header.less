@@ -12,30 +12,24 @@
      padding: 0;
     list-style-type: none;
 }
-@media screen and(min-width:320px),(max-width:319px){
+/* @media screen and(min-width:320px),(max-width:319px){
     body{
         max-width:none;
         width:100%;
         text-align:center;
-       
     }  
-   
-}
-@media screen and(min-width: 768px){
-    body{
-        max-width:none;
-        width: 100%;   
-        text-align:center;
-    }
-  
-}
-@media screen and(min-width:992px){
+} */
+@media screen and(min-width: 320px){
     body{
         max-width:none;
         width:100%;
         text-align:center;
+    }  
+    .menu__gl{
+        border-top:1px solid rgb(0, 0, 0);
     }
 }
+
 @media screen and(min-width: 320px)and(max-width:700px){
     .menu__navigator {
         background-color: rgba(0, 0, 0, 0.3);
@@ -47,5 +41,96 @@
         padding: 0 50px;
         margin: 0 auto;
         justify-content: space-between;
+    }
+    .page-header{
+        background:url(/img/bg-back-mobile@1x.jpg) no-repeat center;
+    }
+    .menu__settings{
+        font-size:14px;
+        display:block;
+        min-height:300px;
+        color:white;
+    }
+}
+@media screen and(min-width:700px){
+    .page-header .page-header__top h1{
+        text-align:left;
+        display:block;
+        color:white;
+    }
+    .page-header .page-header__top h1{
+        text-align:left;
+        display:block;
+        color:white;
+    }
+    .menu__intro-container{
+        width:100%;
+        text-align:left;
+        width:300px;
+       // min-height:650px;
+        display:flex;
+        justify-content: space-around;
+        flex-direction:column;
+    }
+    .apps {
+        justify-content: space-around;
+        margin-top: 36px;
+        margin-bottom: 36px;
+        height: 30px;
+        color: #FFFFFF;
+        display: flex;
+        max-width: 320px;
+        width: 100%;
+    }
+}
+@media screen and(min-width:700px)and(max-width:1200px){
+    .page-header{
+        height:600px;
+    }
+    .menu__device{
+        margin-top:90px;
+    }
+    .menu__intro{
+        background:url("/res/iphone-hand.png") no-repeat right;
+        background-position:right -60px bottom -2px;
+        background-size:740px auto;
+        text-align:left;
+        padding: 0 40px;
+        min-width:600px;
+         max-width:1100px;
+        height:510px;
+    }
+    .menu__intro-container {
+        padding-top:40px;
+        width: 350px;
+        text-align: left;
+        max-width: 1200px;
+        padding-left: 40px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size:24px;
+    }
+
+}
+@media screen and(min-width:1200px){
+    .menu__settings{
+        height: 100%;
+    }
+    .menu__intro{
+        height:100%;
+        background:url("/res/iphone-hand.png") no-repeat right 45px;
+    }
+    .menu__intro-container{
+        width:350px;
+        text-align:left;
+        max-width:1200px;
+        padding-left:200px;
+        display:flex;
+        justify-content: space-around;
+        flex-direction:column; 
+    }
+    .menu__gl{
+        border:none;
     }
 }
