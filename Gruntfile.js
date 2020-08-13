@@ -148,7 +148,7 @@ module.exports = function (grunt) {
     "less",
     "postcss",
     "csso",
-   // "symbols",
-   // "imagemin"
+    "symbols",
+    "imagemin"
   ]);
 };
