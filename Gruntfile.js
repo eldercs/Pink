@@ -116,7 +116,7 @@ module.exports = function (grunt) {
           ]
         },
         options: {
-          server: ".",
+          server: "build",
           watchTask: true,
           notify: false,
           open: true,
@@ -148,7 +148,7 @@ module.exports = function (grunt) {
     "less",
     "postcss",
     "csso",
-    "symbols",
-    "imagemin"
+  //  "symbols",
+   // "imagemin"
   ]);
 };
